@@ -126,8 +126,8 @@ const Header = () => {
           <Box width="20%" display="flex" alignItems="center">
             <Link href="/" underline="none" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
               <Image 
-                width={90} 
-                height={90} 
+                width={150} 
+                height={150} 
                 src="/logo.png" 
                 alt="AnuTechSolutions logo" 
                 style={{ objectFit: 'cover' }} 
