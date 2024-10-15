@@ -475,7 +475,7 @@ const webDev = {
 };
 
 const webDev2 = {
-  header: "Skool Saver : the Perfect option for Front-end Web App Development",
+  header: "AnuTechSolution's : the Perfect option for Front-end Web App Development",
   content:
     "We never hesitate to work with small-scale companies or startups even though we have a number of MNCs and corporate companies across the globe.",
   lists: [
@@ -585,7 +585,7 @@ const appDevSkills = {
 };
 
 const appDev2 = {
-  header: "Skool Saver : the Perfect option for Mobile App Development",
+  header: "AnuTechSolution's : the Perfect option for Mobile App Development",
   content:
     "We never hesitate to work with small-scale companies or startups even though we have a number of MNCs and corporate companies across the globe.",
   lists: [
@@ -687,7 +687,7 @@ const eComSkills = {
 };
 
 const ecom2 = {
-  header: "Skool Saver : The place of eCommerce experts",
+  header: "AnuTechSolution's : The place of eCommerce experts",
   content:
     "We have hired the best-experienced eCommerce developers who ought to fulfill all requirements by your modern eCommerce site requirement with user-friendly features.",
   lists: [
@@ -784,7 +784,7 @@ const digitalSkills = {
 };
 
 const digital2 = {
-  header: "Skool Saver : The right choice for your Organic SEO, PPC, and SMO",
+  header: "AnuTechSolution's : The right choice for your Organic SEO, PPC, and SMO",
   content:
     "We incorporate all kinds of latest algorithms recommended by Google towards the Organic SEO, PPC, and Social Media promotions such as Number of Back-links and Keywords ratio with content.",
 

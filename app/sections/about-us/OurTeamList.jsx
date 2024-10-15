@@ -28,25 +28,25 @@ const OurTeamList = () => {
       >
         {[
           {
-            name: "Amith",
+            name: "Jawahar Reddy",
             id: 1,
-            image: "",
-            role: "software engineer",
-            experience: "40+ year",
+            image: "/images/jawahar.png", // Correct path for public folder
+            role: "Chief Executive Officer",
+            experience: "4+ years",
           },
           {
-            name: "Amith",
+            name: "G. Gopi",
             id: 2,
-            image: "",
-            role: "software engineer",
-            experience: "40+ year",
+            image: "/images/gopi.png", // Correct path for public folder
+            role: "Managing Director",
+            experience: "3+ years",
           },
           {
-            name: "Amith",
+            name: "Shubham Dubey",
             id: 3,
-            image: "",
-            role: "software engineer",
-            experience: "40+ year",
+            image: "/images/shubham.png", // Correct path for public folder
+            role: "Chief Technology Officer",
+            experience: "6+ years",
           },
         ].map((user) => {
           return <UserCard key={user.id} {...user} />;

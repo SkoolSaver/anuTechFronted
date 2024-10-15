@@ -87,14 +87,14 @@ const ContactUsPage = () => {
                   variant="body1"
                   className={nunitoSans.className}
                 >
-                  <strong>Flat-203,</strong>
+                  <strong>Flat-203, </strong>
                   Sri Venkateswara Heights, Vasavi layout, Pragati Nagar, Hyderabad - 500090
                 </Typography>
               </Box>
             </Stack>
             <Divider />
             <Stack direction="row" spacing={2}>
-              <Icon
+              {/* <Icon
                 sx={{
                   bgcolor: "purple",
                   p: 3,
@@ -106,7 +106,7 @@ const ContactUsPage = () => {
               >
                 <HomeIcon sx={{ fontSize: 25, color: "white" }} />
               </Icon>
-              {/* <Box display="flex" flexDirection="column" gap={2}>
+              <Box display="flex" flexDirection="column" gap={2}>
                 <Typography
                   variant="h3"
                   className={popins.className}
