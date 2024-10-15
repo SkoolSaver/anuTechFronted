@@ -116,11 +116,11 @@ const Header = () => {
         >
           <Box width="20%">
             <Link href="/" underline="none" style={{ textDecoration: "none" }}>
-              <Typography variant="h3" className="gradientText" fontSize={35} fontWeight="bold" sx={{ color: '#DAA520' }}>
+              <Typography variant="h3" className="gradientText" fontSize={35} fontWeight="bold" sx={{ color: '#7A1CAC' }}>
                 AnuTechSolutions
               </Typography>
             </Link>
-            {/* <Image width={220} height={75} src="/logo.png" alt="logo" /> */}
+            <Image width={220} height={75} src="/logo.png" alt="logo" /> 
           </Box>
           <Box width="60%" display="flex" gap={4} alignItems="center">
             <Box
