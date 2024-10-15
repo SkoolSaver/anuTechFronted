@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/legacy/image";
 import AppBar from "@mui/material/AppBar";
 import Container from "@mui/material/Container";
 import {
@@ -120,7 +121,7 @@ const Header = () => {
                 AnuTechSolutions
               </Typography>
             </Link>
-            <Image width={220} height={75} src="/logo.png" alt="logo" /> 
+            <Image width={220} height={75} src="/logo.png" alt="AnuTechSolutions logo" /> 
           </Box>
           <Box width="60%" display="flex" gap={4} alignItems="center">
             <Box
