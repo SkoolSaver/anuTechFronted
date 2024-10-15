@@ -116,7 +116,7 @@ const Header = () => {
         >
           <Box width="20%">
             <Link href="/" underline="none" style={{ textDecoration: "none" }}>
-              <Typography variant="h3" className="gradientText" fontSize={35}>
+              <Typography variant="h3" className="gradientText" fontSize={35} fontWeight="bold" sx={{ color: '#DAA520' }}>
                 AnuTechSolutions
               </Typography>
             </Link>
