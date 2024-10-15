@@ -115,12 +115,23 @@ const Header = () => {
           justifyContent="space-between"
           alignItems="center"
         >
-          <Box width="20%">
+          {/* <Box width="20%">
             <Link href="/" underline="none" style={{ textDecoration: "none", display: "flex", alignItems: "center"  }}>
             <Image width={90} height={90} src="/logo.png" alt="AnuTechSolutions logo" style={{ objectFit: 'cover' }} /> 
               <Typography variant="h3" className="gradientText" fontSize={35} fontWeight="bold" sx={{ color: '#7A1CAC', ml: 2 }}>
                 AnuTechSolutions
               </Typography>
+            </Link>
+          </Box> */}
+          <Box width="20%" display="flex" alignItems="center">
+            <Link href="/" underline="none" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
+              <Image 
+                width={90} 
+                height={90} 
+                src="/logo.png" 
+                alt="AnuTechSolutions logo" 
+                style={{ objectFit: 'cover' }} 
+              />
             </Link>
           </Box>
           <Box width="60%" display="flex" gap={4} alignItems="center">
