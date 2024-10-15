@@ -29,22 +29,22 @@ const OurTeamList = () => {
         {[
           {
             name: "Jawahar Reddy",
-            id: 1,
-            image: "/images/jawahar.png", // Correct path for public folder
+            id: 12,
+            image: "", // Correct path for public folder
             role: "Chief Executive Officer",
             experience: "4+ years",
           },
           {
             name: "G. Gopi",
-            id: 2,
-            image: "/images/gopi.png", // Correct path for public folder
+            id: 13,
+            image: "", // Correct path for public folder
             role: "Managing Director",
             experience: "3+ years",
           },
           {
             name: "Shubham Dubey",
-            id: 3,
-            image: "/images/shubham.png", // Correct path for public folder
+            id: 14,
+            image: "", // Correct path for public folder
             role: "Chief Technology Officer",
             experience: "6+ years",
           },
