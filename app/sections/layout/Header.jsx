@@ -117,7 +117,7 @@ const Header = () => {
           <Box width="20%">
             <Link href="/" underline="none" style={{ textDecoration: "none" }}>
               <Typography variant="h3" className="gradientText" fontSize={35}>
-                SkoolSaver
+                AnuTechSolutions
               </Typography>
             </Link>
             {/* <Image width={220} height={75} src="/logo.png" alt="logo" /> */}
