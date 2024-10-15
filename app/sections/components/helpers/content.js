@@ -78,7 +78,7 @@ export const staticDataInAboutUsPage = {
     name: "About Us",
     header: "Who We Are",
     content: `
-      skoolsaver is a leading web application development company with years of expertise in providing tailored solutions to clients. We specialize in every stage of web app development, from ideation to execution, and have earned numerous awards for delivering top-tier solutions. Our dedication to utilizing cutting-edge technologies drives us to offer exceptional web application development services.
+      AnuTechSolutions is a leading web application development company with years of expertise in providing tailored solutions to clients. We specialize in every stage of web app development, from ideation to execution, and have earned numerous awards for delivering top-tier solutions. Our dedication to utilizing cutting-edge technologies drives us to offer exceptional web application development services.
       Additionally, we are a full-cycle provider of custom web app development for established brands, emerging enterprises, and tech-driven companies. We help businesses embrace the web’s mobile-centric nature while modernizing legacy systems into innovative cross-platform applications.
     `,
   },
