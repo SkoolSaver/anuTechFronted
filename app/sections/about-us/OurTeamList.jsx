@@ -30,21 +30,21 @@ const OurTeamList = () => {
           {
             name: "Jawahar Reddy",
             id: 12,
-            image: "", // Correct path for public folder
+            image: "/jawahar.png", // Correct path for public folder
             role: "Chief Executive Officer",
             experience: "4+ years",
           },
           {
             name: "G. Gopi",
             id: 13,
-            image: "", // Correct path for public folder
+            image: "/gopi.png", // Correct path for public folder
             role: "Managing Director",
             experience: "3+ years",
           },
           {
             name: "Shubham Dubey",
             id: 14,
-            image: "", // Correct path for public folder
+            image: "/shubham.png", // Correct path for public folder
             role: "Chief Technology Officer",
             experience: "6+ years",
           },
