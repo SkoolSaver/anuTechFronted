@@ -39,7 +39,7 @@ const ContactUs = () => {
                 <ListItemText
                   primary={
                     <a href='tel:+918309782214' style={{ color: 'white', textDecoration: 'none' }}>
-                      +91 9876543210
+                      +91 8309782214
                     </a>
                   }
                   primaryTypographyProps={{ color: 'white' }}
@@ -54,7 +54,7 @@ const ContactUs = () => {
                 <ListItemText
                   primary={
                     <a href='mailto:gopigollamandala9999@gmail.com' style={{ color: 'white', textDecoration: 'none' }}>
-                      info@skoolsaver.com
+                      gopigollamandala9999@gmail.com
                     </a>
                   }
                   primaryTypographyProps={{ color: 'white' }}
