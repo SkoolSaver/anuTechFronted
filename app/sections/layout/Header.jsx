@@ -16,7 +16,7 @@ import {
 import Link from "next/link";
 import { nunitoSans, popins } from "@/app/google-fonts/fonts";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 // services
 const services = [
@@ -101,6 +101,7 @@ const Header = () => {
   const handleclick = (ele) => () => {
     setIsActiveEle(ele);
   };
+
   return (
     <AppBar
       position="sticky"
@@ -115,26 +116,27 @@ const Header = () => {
           justifyContent="space-between"
           alignItems="center"
         >
-          {/* <Box width="20%">
-            <Link href="/" underline="none" style={{ textDecoration: "none", display: "flex", alignItems: "center"  }}>
-            <Image width={90} height={90} src="/logo.png" alt="Anu Tech Solutionss logo" style={{ objectFit: 'cover' }} /> 
-              <Typography variant="h3" className="gradientText" fontSize={35} fontWeight="bold" sx={{ color: '#7A1CAC', ml: 2 }}>
-                Anu Tech Solutionss
-              </Typography>
-            </Link>
-          </Box> */}
+          {/* Logo */}
           <Box width="20%" display="flex" alignItems="center">
             <Link href="/" underline="none" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
               <Image 
                 width={150} 
                 height={150} 
                 src="/logo.png" 
-                alt="Anu Tech Solutionss logo" 
+                alt="Anu Tech Solutions logo" 
                 style={{ objectFit: 'cover' }} 
               />
             </Link>
           </Box>
-          <Box width="60%" display="flex" gap={4} alignItems="center">
+          
+          {/* Navigation Links */}
+          <Box 
+            width="55%"  // Adjusted width for links
+            display="flex" 
+            gap={4} 
+            alignItems="center"
+            flexWrap="wrap"  // Allow wrapping if space is limited
+          >
             <Box
               onClick={handleclick("home")}
               component={Link}
@@ -167,11 +169,10 @@ const Header = () => {
               Accelerator Program
             </Box>
 
-            {/* service */}
+            {/* Services Dropdown */}
             <Box
               display="flex"
               flexDirection="column"
-              spacing={2}
               sx={linkObj}
               height={23}
               position="relative"
@@ -225,8 +226,8 @@ const Header = () => {
                 </List>
               </Stack>
             </Box>
-            {/* packages */}
 
+            {/* Other Links */}
             <Box
               onClick={handleclick("products")}
               component={Link}
@@ -259,15 +260,18 @@ const Header = () => {
             >
               Contact Us
             </Box>
-            <Divider
-              orientation="vertical"
-              variant="middle"
-              sx={{ height: 40, background: "white", width: 2 }}
-            />
+          </Box>
+
+          {/* Button */}
+          <Box width="25%" display="flex" justifyContent="flex-end">
             <Button
               variant="contained"
               href="/get-a-quote"
-              sx={{ bgcolor: "white", color: "black" }}
+              sx={{
+                bgcolor: "white",
+                color: "black",
+                flexShrink: 0,  // Prevent shrinking
+              }}
             >
               Book free Consultation
             </Button>
