@@ -23,12 +23,13 @@ const AccleratorProgram = () => {
         sx={{ mb: 8, textAlign: "center", color: "gray", fontSize: 20 }}
       >
         Our Accelerator Program is designed to help startups and businesses
-        scale rapidly with tailored resources and guidance.
+        scale rapidly with tailored resources, mentorship, funding, and a
+        vast network of opportunities. <br /> We empower entrepreneurs to thrive in competitive markets!
       </Typography>
 
       {/* Program Details with Hover Effects */}
       <Box>
-        {/* Mentorship Section */}
+        {/* Mentorship & Guidance Section */}
         <Box
           sx={{
             mb: 6,
@@ -46,9 +47,30 @@ const AccleratorProgram = () => {
           >
             1. Mentorship & Guidance
           </Typography>
-          <Typography variant="body1" sx={{ color: "gray", mt: 2, fontSize: 18 }}>
-            Our team of experienced mentors provides you with insights,
-            strategies, and guidance to help you accelerate your growth.
+          <Typography
+            variant="body1"
+            sx={{ color: "gray", mt: 2, fontSize: 18, lineHeight: 1.8 }}
+          >
+            Our team of experienced mentors offers more than just advice—they
+            provide tailored, strategic insights drawn from years of industry
+            experience. Whether you're navigating the complexities of product
+            development, go-to-market strategies, or scaling operations, our
+            mentors stand by your side, guiding you through each critical phase
+            of growth.
+            <br />
+            <br />
+            <strong>What you can expect:</strong> One-on-one sessions, group
+            workshops, and access to a wealth of knowledge that helps you turn
+            your ideas into action. Our mentors will challenge your assumptions,
+            push your limits, and help you unlock new possibilities for growth.
+            Together, we'll create a roadmap tailored specifically for your
+            business’s unique needs and goals.
+            <br />
+            <br />
+            <em>
+              "Success is best achieved with guidance—our mentors help you
+              chart the path to success."
+            </em>
           </Typography>
         </Box>
 
@@ -70,13 +92,32 @@ const AccleratorProgram = () => {
           >
             2. Funding Opportunities
           </Typography>
-          <Typography variant="body1" sx={{ color: "gray", mt: 2, fontSize: 18 }}>
-            We connect you with a wide range of investors who are actively
-            seeking opportunities to fund innovative startups.
+          <Typography
+            variant="body1"
+            sx={{ color: "gray", mt: 2, fontSize: 18, lineHeight: 1.8 }}
+          >
+            Finding the right investors can be a game-changer for your startup,
+            and we’re here to help you connect with the right ones. Through our
+            accelerator program, you will have access to a diverse pool of
+            investors ranging from venture capitalists to angel investors who
+            are actively looking for high-potential startups like yours.
+            <br />
+            <br />
+            <strong>How we support you:</strong> We provide guidance on creating
+            investor-ready pitches, financial projections, and a compelling
+            business case. You’ll get introductions to top-tier investors,
+            opportunities to present at exclusive pitch events, and access to
+            grant programs and alternative funding.
+            <br />
+            <br />
+            <em>
+              "Funding your dreams is just the beginning—we help you sustain and
+              scale."
+            </em>
           </Typography>
         </Box>
 
-        {/* More Details - Add more sections if needed */}
+        {/* Networking Opportunities Section */}
         <Box
           sx={{
             mb: 6,
@@ -94,10 +135,28 @@ const AccleratorProgram = () => {
           >
             3. Networking Opportunities
           </Typography>
-          <Typography variant="body1" sx={{ color: "gray", mt: 2, fontSize: 18 }}>
-            Join our exclusive network of entrepreneurs, industry leaders, and
-            investors to expand your business connections and increase your
-            chances of success.
+          <Typography
+            variant="body1"
+            sx={{ color: "gray", mt: 2, fontSize: 18, lineHeight: 1.8 }}
+          >
+            Building a successful business is not just about having a great
+            product—it's about having the right people in your corner. Our
+            accelerator program connects you with a vibrant ecosystem of
+            entrepreneurs, industry experts, investors, and potential partners
+            to create invaluable connections that open doors to future
+            collaborations and partnerships.
+            <br />
+            <br />
+            <strong>What you’ll gain:</strong> Access to exclusive networking
+            events, industry conferences, and one-on-one meetings with thought
+            leaders who can provide critical insights into emerging trends and
+            market opportunities.
+            <br />
+            <br />
+            <em>
+              "Your network is your net worth—accelerate your growth with the
+              power of strategic connections."
+            </em>
           </Typography>
         </Box>
 
@@ -119,10 +178,28 @@ const AccleratorProgram = () => {
           >
             4. Application Process
           </Typography>
-          <Typography variant="body1" sx={{ color: "gray", mt: 2, fontSize: 18 }}>
-            Our application process is simple and fast. Submit your startup’s
-            information, and we will get back to you within 48 hours to discuss
-            the next steps.
+          <Typography
+            variant="body1"
+            sx={{ color: "gray", mt: 2, fontSize: 18, lineHeight: 1.8 }}
+          >
+            Joining our Accelerator Program is easy and straightforward. We
+            believe in a transparent and streamlined process, designed to get
+            you started as quickly as possible. Once you apply, we review your
+            application and respond within 48 hours with feedback and the next
+            steps.
+            <br />
+            <br />
+            <strong>Here’s how it works:</strong> Submit your startup’s
+            information, including your product details, target market, and
+            current growth stage. Our team will schedule a call with you to
+            discuss your startup’s fit for the program and provide further
+            insights into what to expect.
+            <br />
+            <br />
+            <em>
+              "Your application is the first step toward transforming your
+              startup’s future—let’s get started!"
+            </em>
           </Typography>
         </Box>
       </Box>
