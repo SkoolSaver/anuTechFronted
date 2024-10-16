@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Typography, Box } from "@mui/material";
-import { popins } from "@/app/google-fonts/fonts"; // Assuming you are using this font
+import { popins } from "@/app/google-fonts/fonts";
 
 const AccleratorProgram = () => {
   return (
@@ -8,46 +8,123 @@ const AccleratorProgram = () => {
       {/* Page Title */}
       <Typography
         variant="h2"
-        fontSize={35}
-        fontWeight={600}
+        fontSize={40}
+        fontWeight={700}
         textAlign="center"
         className={popins.className}
-        sx={{ mb: 4, color: "white" }}
+        sx={{ mb: 6, color: "white", textTransform: "uppercase" }}
       >
         Startup Accelerator Program
       </Typography>
 
-      {/* Introduction Section */}
+      {/* Introduction */}
       <Typography
         variant="body1"
-        sx={{ mb: 4, textAlign: "center", color: "gray" }}
+        sx={{ mb: 8, textAlign: "center", color: "gray", fontSize: 20 }}
       >
-        Our Accelerator Program is designed to help startups and businesses scale rapidly with tailored resources and guidance.
+        Our Accelerator Program is designed to help startups and businesses
+        scale rapidly with tailored resources and guidance.
       </Typography>
 
-      {/* Sections for the Program */}
+      {/* Program Details with Hover Effects */}
       <Box>
-        {/* Example Section 1 */}
-        <Box sx={{ mb: 4 }}>
-          <Typography variant="h4" fontWeight={600} color="white">
+        {/* Mentorship Section */}
+        <Box
+          sx={{
+            mb: 6,
+            transition: "transform 0.3s, color 0.3s",
+            "&:hover": {
+              transform: "scale(1.05)",
+              color: "#67c3f3",
+            },
+          }}
+        >
+          <Typography
+            variant="h4"
+            fontWeight={600}
+            sx={{ color: "white", fontSize: 28 }}
+          >
             1. Mentorship & Guidance
           </Typography>
-          <Typography variant="body1" color="gray" sx={{ mt: 2 }}>
-            Our team of experienced mentors provides you with insights, strategies, and guidance to help you accelerate your growth.
+          <Typography variant="body1" sx={{ color: "gray", mt: 2, fontSize: 18 }}>
+            Our team of experienced mentors provides you with insights,
+            strategies, and guidance to help you accelerate your growth.
           </Typography>
         </Box>
 
-        {/* Example Section 2 */}
-        <Box sx={{ mb: 4 }}>
-          <Typography variant="h4" fontWeight={600} color="white">
+        {/* Funding Opportunities Section */}
+        <Box
+          sx={{
+            mb: 6,
+            transition: "transform 0.3s, color 0.3s",
+            "&:hover": {
+              transform: "scale(1.05)",
+              color: "#67c3f3",
+            },
+          }}
+        >
+          <Typography
+            variant="h4"
+            fontWeight={600}
+            sx={{ color: "white", fontSize: 28 }}
+          >
             2. Funding Opportunities
           </Typography>
-          <Typography variant="body1" color="gray" sx={{ mt: 2 }}>
-            We connect you with a wide range of investors who are actively seeking opportunities to fund innovative startups.
+          <Typography variant="body1" sx={{ color: "gray", mt: 2, fontSize: 18 }}>
+            We connect you with a wide range of investors who are actively
+            seeking opportunities to fund innovative startups.
           </Typography>
         </Box>
 
-        {/* Add more sections or details about the Accelerator Program as needed */}
+        {/* More Details - Add more sections if needed */}
+        <Box
+          sx={{
+            mb: 6,
+            transition: "transform 0.3s, color 0.3s",
+            "&:hover": {
+              transform: "scale(1.05)",
+              color: "#67c3f3",
+            },
+          }}
+        >
+          <Typography
+            variant="h4"
+            fontWeight={600}
+            sx={{ color: "white", fontSize: 28 }}
+          >
+            3. Networking Opportunities
+          </Typography>
+          <Typography variant="body1" sx={{ color: "gray", mt: 2, fontSize: 18 }}>
+            Join our exclusive network of entrepreneurs, industry leaders, and
+            investors to expand your business connections and increase your
+            chances of success.
+          </Typography>
+        </Box>
+
+        {/* Application Process Section */}
+        <Box
+          sx={{
+            mb: 6,
+            transition: "transform 0.3s, color 0.3s",
+            "&:hover": {
+              transform: "scale(1.05)",
+              color: "#67c3f3",
+            },
+          }}
+        >
+          <Typography
+            variant="h4"
+            fontWeight={600}
+            sx={{ color: "white", fontSize: 28 }}
+          >
+            4. Application Process
+          </Typography>
+          <Typography variant="body1" sx={{ color: "gray", mt: 2, fontSize: 18 }}>
+            Our application process is simple and fast. Submit your startup’s
+            information, and we will get back to you within 48 hours to discuss
+            the next steps.
+          </Typography>
+        </Box>
       </Box>
     </Container>
   );
