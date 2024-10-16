@@ -34,9 +34,6 @@ const footerDesigns = [
   { id: 9, image: "asset 9.png", title: "JavaScript" },
   { id: 10, image: "asset 10.png", title: "Python" },
   { id: 11, image: "asset 11.png", title: "MySQL" },
-  { id: 12, image: "jawahar.png", title: "React JS" },
-  { id: 13, image: "gopi.png", title: "Node JS" },
-  { id: 14, image: "shubham.png", title: "Redux" },
 ];
 
 const scrollAnimation = keyframes`

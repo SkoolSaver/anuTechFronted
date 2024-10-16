@@ -57,7 +57,7 @@ const ContactUsPage = () => {
               fontWeight={600}
               color="white"
             >
-              AnuTechSolutions Address
+              Anu Tech Solutionss Address
             </Typography>
             <Stack direction="row" spacing={2}>
               <Icon
