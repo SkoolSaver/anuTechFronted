@@ -26,7 +26,7 @@ const ContactUs = () => {
                   <HomeIcon sx={{ color: 'skyblue' }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary='1873, Corporate Arena, Keshavrao Bhumkar Chowk, Narhe, Pune - 411041'
+                  primary='Flat- 203 Sri Venkateswara Heights, Vasavi layout, Pragati Nagar, Hyderabad - 500090'
                   primaryTypographyProps={{ color: 'white' }}
                 />
               </ListItem>
@@ -38,7 +38,7 @@ const ContactUs = () => {
                 </ListItemIcon>
                 <ListItemText
                   primary={
-                    <a href='tel:+919876543210' style={{ color: 'white', textDecoration: 'none' }}>
+                    <a href='tel:+918309782214' style={{ color: 'white', textDecoration: 'none' }}>
                       +91 9876543210
                     </a>
                   }
@@ -53,7 +53,7 @@ const ContactUs = () => {
                 </ListItemIcon>
                 <ListItemText
                   primary={
-                    <a href='mailto:info@skoolsaver.com' style={{ color: 'white', textDecoration: 'none' }}>
+                    <a href='mailto:gopigollamandala9999@gmail.com' style={{ color: 'white', textDecoration: 'none' }}>
                       info@skoolsaver.com
                     </a>
                   }
