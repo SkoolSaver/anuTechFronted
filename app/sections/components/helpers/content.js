@@ -239,23 +239,23 @@ const industries = {
 const whyChoose = {
   lists: [
     {
-      header: "5+",
+      header: "1+",
       content: "Years of experience",
     },
     {
-      header: "55+",
+      header: "2+",
       content: "Dedicated Team",
     },
     {
-      header: "2000+",
+      header: "4+",
       content: "Project done",
     },
     {
-      header: "2500+",
+      header: "5+",
       content: "Trusted Client",
     },
     {
-      header: "2000+",
+      header: "10+",
       content: "Project done",
     },
   ],
