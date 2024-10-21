@@ -136,6 +136,7 @@ const Footer = () => {
           <Box display="flex" justifyContent="center">
             <Button
               variant="contained"
+              href="/get-a-quote"
               sx={{ bgcolor: "white", color: "black" }}
             >
               Book free Consultation
