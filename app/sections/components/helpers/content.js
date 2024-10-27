@@ -78,7 +78,7 @@ export const staticDataInAboutUsPage = {
     name: "About Us",
     header: "Who We Are",
     content: `
-      Anu Tech Solutionss is a leading web application development company with years of expertise in providing tailored solutions to clients. We specialize in every stage of web app development, from ideation to execution, and have earned numerous awards for delivering top-tier solutions. Our dedication to utilizing cutting-edge technologies drives us to offer exceptional web application development services.
+      SkoolSavers is a leading web application development company with years of expertise in providing tailored solutions to clients. We specialize in every stage of web app development, from ideation to execution, and have earned numerous awards for delivering top-tier solutions. Our dedication to utilizing cutting-edge technologies drives us to offer exceptional web application development services.
       Additionally, we are a full-cycle provider of custom web app development for established brands, emerging enterprises, and tech-driven companies. We help businesses embrace the web’s mobile-centric nature while modernizing legacy systems into innovative cross-platform applications.
     `,
   },
@@ -337,7 +337,7 @@ const webDesign = {
 };
 
 const webDesign2 = {
-  header: "Anu Tech Solutions : The right choice for your Advanced Web Design need",
+  header: "SkoolSaver : The right choice for your Advanced Web Design need",
   content:
     "We never hesitate to work with small-scale companies or startups even though we have a number of MNCs and corporate companies across the globe.",
   lists: [
@@ -475,7 +475,7 @@ const webDev = {
 };
 
 const webDev2 = {
-  header: "Anu Tech Solutions : the Perfect option for Front-end Web App Development",
+  header: "SkoolSaver : the Perfect option for Front-end Web App Development",
   content:
     "We never hesitate to work with small-scale companies or startups even though we have a number of MNCs and corporate companies across the globe.",
   lists: [
@@ -585,7 +585,7 @@ const appDevSkills = {
 };
 
 const appDev2 = {
-  header: "Anu Tech Solutions's : the Perfect option for Mobile App Development",
+  header: "SkoolSaver's : the Perfect option for Mobile App Development",
   content:
     "We never hesitate to work with small-scale companies or startups even though we have a number of MNCs and corporate companies across the globe.",
   lists: [
@@ -687,7 +687,7 @@ const eComSkills = {
 };
 
 const ecom2 = {
-  header: "Anu Tech Solutions's : The place of eCommerce experts",
+  header: "SkoolSaver's : The place of eCommerce experts",
   content:
     "We have hired the best-experienced eCommerce developers who ought to fulfill all requirements by your modern eCommerce site requirement with user-friendly features.",
   lists: [
@@ -784,7 +784,7 @@ const digitalSkills = {
 };
 
 const digital2 = {
-  header: "Anu Tech Solutions's : The right choice for your Organic SEO, PPC, and SMO",
+  header: "SkoolSaver's : The right choice for your Organic SEO, PPC, and SMO",
   content:
     "We incorporate all kinds of latest algorithms recommended by Google towards the Organic SEO, PPC, and Social Media promotions such as Number of Back-links and Keywords ratio with content.",
 

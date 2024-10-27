@@ -123,7 +123,7 @@ const Header = () => {
                 width={150} 
                 height={150} 
                 src="/logo.png" 
-                alt="Anu Tech Solutions logo" 
+                alt="SkoolSaver logo" 
                 style={{ objectFit: 'cover' }} 
               />
             </Link>
