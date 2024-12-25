@@ -55,8 +55,8 @@ const ContactUs = () => {
         </Box>
 
         <Box width={{ xs: '100%', md: '55%' }}>
-          <Card sx={{ p: 4 }}>
-            <Typography variant="h4" component="h1" gutterBottom>
+          <Card sx={{ p: 4, backgroundColor: '#1a171c', borderRadius: '8px' }}>
+            <Typography variant="h4" component="h1" gutterBottom color="white">
               Get in Touch
             </Typography>
             <Box
@@ -67,10 +67,35 @@ const ContactUs = () => {
                 gap: 2,
               }}
             >
-              <TextField label="Name" variant="outlined" fullWidth />
-              <TextField label="Email" variant="outlined" fullWidth />
-              <TextField label="Message" variant="outlined" fullWidth multiline rows={4} />
-              <Button variant="contained" color="primary" type="submit">
+              <TextField 
+                label="Name" 
+                variant="outlined" 
+                fullWidth 
+                InputLabelProps={{ style: { color: 'white' } }} 
+                InputProps={{ style: { color: 'white', backgroundColor: '#2c2c2c', borderRadius: '4px' } }}
+              />
+              <TextField 
+                label="Email" 
+                variant="outlined" 
+                fullWidth 
+                InputLabelProps={{ style: { color: 'white' } }} 
+                InputProps={{ style: { color: 'white', backgroundColor: '#2c2c2c', borderRadius: '4px' } }}
+              />
+              <TextField 
+                label="Message" 
+                variant="outlined" 
+                fullWidth 
+                multiline 
+                rows={4} 
+                InputLabelProps={{ style: { color: 'white' } }} 
+                InputProps={{ style: { color: 'white', backgroundColor: '#2c2c2c', borderRadius: '4px' } }}
+              />
+              <Button 
+                variant="contained" 
+                color="primary" 
+                type="submit" 
+                sx={{ backgroundColor: 'white', color: 'black', '&:hover': { backgroundColor: '#e0e0e0' } }}
+              >
                 Submit
               </Button>
             </Box>
