@@ -57,6 +57,48 @@ const aboutUs = {
   },
 };
 
+const whyChoose = {
+  lists: [
+    {
+      header: "1+",
+      content: "Years of experience",
+    },
+    {
+      header: "100+",
+      content: "Projects completed",
+    },
+    {
+      header: "50+",
+      content: "Happy clients",
+    },
+    {
+      header: "24/7",
+      content: "Support",
+    },
+  ],
+};
+
+const industries = [
+  {
+    icon: <School sx={{ color: "white" }} />, // Icon for Education
+    header: "Education",
+    content:
+      "You’ll have Mobile App and E-learning web application and Windows application for a user-friendly education practice purpose! Both teachers and students will avoid any complexity!",
+  },
+  {
+    icon: <ShoppingCart sx={{ color: "white" }} />, // Icon for E-commerce
+    header: "E-commerce",
+    content:
+      "Multiple E-commerce sites have been developed by many businesses, but how many are successful! Our B2B and B2C E-commerce sites help the business owners to earn a lot!",
+  },
+  {
+    icon: <HomeWork sx={{ color: "white" }} />, // Icon for Real estate
+    header: "Real estate",
+    content:
+      "Often real estate sites need excellent Graphics design and web design to attract more visitors for any property and this puts an impact on sales volume! We understand well their need!",
+  },
+];
+
 export const staticDataInAboutUsPage = {
   rightSide: {
     name: "About Us",
@@ -175,48 +217,6 @@ const digitalMarketing = {
       header: "Affiliate Marketing",
       content:
         "Get paid the commission on the sales volume with tricky affiliate marketing and the Amazon sellers and other online eCommerce sellers can take this opportunity to increase the sales volume!",
-    },
-  ],
-};
-
-const industries = [
-  {
-    icon: <School sx={{ color: "white" }} />, // Icon for Education
-    header: "Education",
-    content:
-      "You’ll have Mobile App and E-learning web application and Windows application for a user-friendly education practice purpose! Both teachers and students will avoid any complexity!",
-  },
-  {
-    icon: <ShoppingCart sx={{ color: "white" }} />, // Icon for E-commerce
-    header: "E-commerce",
-    content:
-      "Multiple E-commerce sites have been developed by many businesses, but how many are successful! Our B2B and B2C E-commerce sites help the business owners to earn a lot!",
-  },
-  {
-    icon: <HomeWork sx={{ color: "white" }} />, // Icon for Real estate
-    header: "Real estate",
-    content:
-      "Often real estate sites need excellent Graphics design and web design to attract more visitors for any property and this puts an impact on sales volume! We understand well their need!",
-  },
-];
-
-const whyChoose = {
-  lists: [
-    {
-      header: "1+",
-      content: "Years of experience",
-    },
-    {
-      header: "100+",
-      content: "Projects completed",
-    },
-    {
-      header: "50+",
-      content: "Happy clients",
-    },
-    {
-      header: "24/7",
-      content: "Support",
     },
   ],
 };
