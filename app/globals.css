@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #000;
+  background-color: black;
 }
 
 /* Target the scrollbar */
@@ -64,9 +64,6 @@ body {
 
 .parent-services:hover .child-services {
   display: block;
-}
-body {
-  background-color: black;
 }
 
 .container {
@@ -185,4 +182,31 @@ body {
   color: hsla(0, 0%, 100%, 0.5);
   font-size: 16px;
   max-width: 470px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1200px) {
+  body {
+    font-size: 16px; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: #111; /* Example adjustment for mobile */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  /* Add other responsive styles for small devices */
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px; /* Further adjustments for very small screens */
+  }
+
+  /* Example: hide large elements or adjust layout */
+  .large-element {
+    display: none;
+  }
 }
