@@ -1,28 +1,19 @@
 import localFont from "next/font/local";
-import { Nunito_Sans } from 'next/font/google'; // Import Nunito Sans from Google Fonts
 import "./globals.css";
 import SrcollPage from "./sections/scroller/SrcollPage";
 import { ToastContainer } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 
-// Define the local fonts
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
-
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
-});
-
-// Define Nunito Sans
-const nunitoSans = Nunito_Sans({
-  subsets: ['latin'],
-  variable: '--font-nunito-sans',
 });
 
 export const metadata = {
@@ -33,7 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${nunitoSans.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <ToastContainer
           position="top-right"
           autoClose={5000}

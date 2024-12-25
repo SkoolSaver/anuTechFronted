@@ -9,7 +9,7 @@ function DedicatedCardChoose({ title, data }) {
         sx={{
           color: "#fff",
           fontWeight: "700",
-          fontSize: "32px",
+          fontSize: { xs: "24px", sm: "28px", md: "32px" },
           textAlign: "center",
           marginBottom: "10px",
         }}
@@ -19,10 +19,10 @@ function DedicatedCardChoose({ title, data }) {
       <Stack
         sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: { xs: "column", sm: "row" },
           gap: "16px",
           maxWidth: "1100px",
-          padding: "32px 16px",
+          padding: { xs: "16px", sm: "32px 16px" },
           alignItems: "center",
           justifyContent: "center",
           margin: "0 auto",
@@ -40,7 +40,7 @@ function DedicatedCardChoose({ title, data }) {
                 alignItems: "center",
                 justifyContent: "center",
                 padding: "16px",
-                width: "250px",
+                width: { xs: "100%", sm: "250px" },
                 gap: 2,
                 transition: "transform 0.3s ease",
                 borderRadius: "10px",
@@ -62,7 +62,12 @@ function DedicatedCardChoose({ title, data }) {
                 {data.header}
               </Typography>
               <Typography
-                sx={{ fontSize: "14px", color: "#81868f", lineHeight: "1.2" }}
+                sx={{
+                  fontSize: "14px",
+                  color: "#81868f",
+                  lineHeight: "1.2",
+                  textAlign: "center",
+                }}
               >
                 {data.content}
               </Typography>

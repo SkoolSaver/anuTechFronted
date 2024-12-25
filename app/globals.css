@@ -2,11 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: none;
 }
 
 body {
-  background-color: black;
+  background-color: #000;
 }
 
 /* Target the scrollbar */
@@ -66,12 +65,30 @@ body {
 .parent-services:hover .child-services {
   display: block;
 }
+body {
+  background-color: black;
+}
 
 .container {
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 16px;
-  margin: 64px auto;
+  width: 1200px !important;
+  padding: 0 !important;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 64px;
+
+  @media screen and (min-width: 992px) and (max-width: 1439px) {
+    max-width: 1279px !important;
+    padding: 0 !important;
+    margin: 0 80px !important;
+    width: auto !important;
+  }
+
+  @media screen and (max-width: 991px) {
+    max-width: 959px !important;
+    margin: 0 16px !important;
+    padding: 0 !important;
+    width: auto !important;
+  }
 }
 
 .gradient-cards {
@@ -168,104 +185,4 @@ body {
   color: hsla(0, 0%, 100%, 0.5);
   font-size: 16px;
   max-width: 470px;
-}
-
-/* Responsive Breakpoints */
-@media (max-width: 1200px) {
-  body {
-    font-size: 16px; /* Adjust font size for medium screens */
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    background-color: #111; /* Example adjustment for mobile */
-    font-size: 14px; /* Adjust font size for smaller screens */
-  }
-
-  header {
-    flex-wrap: wrap;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .hamburger-menu {
-    display: block;
-    cursor: pointer;
-  }
-
-  .container {
-    padding: 0 8px;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    font-size: 12px; /* Further adjustments for very small screens */
-  }
-
-  .large-element {
-    display: none;
-  }
-
-  header {
-    justify-content: center;
-  }
-}
-
-/* Header Styles */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px;
-  background-color: #000;
-}
-
-nav {
-  display: flex;
-  gap: 16px;
-}
-
-.hamburger-menu {
-  display: none;
-}
-
-/* Form Styles */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 20px;
-  max-width: 600px;
-  margin: auto;
-}
-
-input, textarea, button {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-/* Optional: Add a custom focus style for accessibility */
-:focus {
-  outline: 2px solid transparent; /* Change to a color that matches your design */
-  outline-offset: 2px;
 }

@@ -57,7 +57,7 @@ const ContactUsPage = () => {
               fontWeight={600}
               color="white"
             >
-              SkoolSaver Address
+              Skool Saver Address
             </Typography>
             <Stack direction="row" spacing={2}>
               <Icon
@@ -87,14 +87,15 @@ const ContactUsPage = () => {
                   variant="body1"
                   className={nunitoSans.className}
                 >
-                  <strong>Flat-203, </strong>
-                  Sri Venkateswara Heights, Vasavi layout, Pragati Nagar, Hyderabad - 500090
+                  <strong>Patna - 301,</strong>
+                  Siddhi Vinayak Apartment, Yarpur Khagul Road, Yarpur, Patna -
+                  800001
                 </Typography>
               </Box>
             </Stack>
             <Divider />
             <Stack direction="row" spacing={2}>
-              {/* <Icon
+              <Icon
                 sx={{
                   bgcolor: "purple",
                   p: 3,
@@ -125,11 +126,11 @@ const ContactUsPage = () => {
                   1873 ,Corporate Arena, Keshavrao Bhumkar chowk, Narhe, Pune -
                   411041
                 </Typography>
-              </Box> */}
+              </Box>
             </Stack>
           </Stack>
         </Stack>
-        {/* <Box>
+        <Box>
           <Divider sx={{ my: 8 }} />
 
           <Typography
@@ -352,7 +353,7 @@ const ContactUsPage = () => {
               </Box>
             </Card>
           </Stack>
-        </Box> */}
+        </Box>
       </Container>
     </>
   );

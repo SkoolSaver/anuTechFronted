@@ -120,6 +120,10 @@ const JobApplyForm = ({ openModal, data }) => {
     }
   };
 
+  const handleSearch = (event) => {
+    console.log(event.target.value);
+  };
+
   return (
     <Dialog
       open={openModal.value}
@@ -195,9 +199,10 @@ const JobApplyForm = ({ openModal, data }) => {
               <RHFAutocomplete
                 multiple
                 type="multipleSelect"
+                onKeyUp={handleSearch}
                 options={skillOptions.map((option) => option.skill)}
                 getOptionLabel={(option) => option}
-                label="Enter Your Experience"
+                label="Enter Your Skills"
                 name="skills"
               />
             </Grid>

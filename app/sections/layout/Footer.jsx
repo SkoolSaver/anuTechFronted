@@ -47,77 +47,13 @@ const scrollAnimation = keyframes`
 
 const ScrollWrapper = styled("div")({
   display: "flex",
-  width: "200%", // Double the width to accommodate both sets of content
+  width: "200%",
   animation: `${scrollAnimation} 20s linear infinite`,
 });
+
 const Footer = () => {
   return (
     <>
-      {/* <Box
-        bgcolor="#020204"
-        color="white"
-        sx={{
-          clipPath: {
-            lg: "polygon(0 0, 100% 20%, 100% 80%, 0 100%)",
-            xs: "polygon(0 0, 100% 30%, 100% 100%, 0 100%)",
-          },
-          backgroundImage:
-            "linear-gradient(110deg, #FB29FF38 0%, #3FB5FD38 100%)",
-        }}
-      >
-        <Container
-          maxWidth="lg"
-          sx={{
-            py: 10,
-          }}
-        >
-          <Stack
-            direction="row"
-            justifyContent="space-between"
-            alignItems="center"
-          >
-            <Box width="50%" display="flex" flexDirection="column" gap={4}>
-              <Typography
-                fontWeight={600}
-                variant="h3"
-                fontSize={25}
-                className={popins.className}
-              >
-                Get here 360 degree advance automated software .
-              </Typography>
-
-              <Divider
-                sx={{ height: 5, width: "50%", backgroundColor: "green" }}
-              />
-              <Typography variant="body1">
-                We leverage the Web and mobile App opportunity to create a solid
-                end-user experience to urge your brand’s augmentation.
-              </Typography>
-
-              <Stack direction="row" spacing={2}>
-                <Button variant="contained" href="/get-a-quote" color="success">
-                  Book free Consultation
-                </Button>
-              </Stack>
-            </Box>
-            <Box width="25%">
-              <Box
-                sx={{
-                  width: { xs: "100%", sm: "220px", md: "100%" },
-                }}
-              >
-                <Image
-                  src="/footer-top.png"
-                  alt="footer-top"
-                  width={240}
-                  height={250}
-                  layout="responsive"
-                />
-              </Box>
-            </Box>
-          </Stack>
-        </Container>
-      </Box> */}
       <Container maxWidth="md">
         <Stack spacing={2}>
           <Typography
@@ -136,7 +72,6 @@ const Footer = () => {
           <Box display="flex" justifyContent="center">
             <Button
               variant="contained"
-              href="/get-a-quote"
               sx={{ bgcolor: "white", color: "black" }}
             >
               Book free Consultation
@@ -145,14 +80,7 @@ const Footer = () => {
         </Stack>
       </Container>
 
-      <Box
-        // mt={-15}
-        pt={5}
-        // bgcolor="#f4f6f9"
-        // sx={{
-        //   clipPath: " polygon(0 15%, 100% 0%, 100% 100%, 0 100%)",
-        // }}
-      >
+      <Box pt={5}>
         <Container maxWidth="lg" sx={{ py: 10, overflow: "hidden" }}>
           <ScrollWrapper>
             <Stack direction="row" spacing={2}>

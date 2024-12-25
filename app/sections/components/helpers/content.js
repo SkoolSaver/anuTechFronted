@@ -35,76 +35,50 @@ import {
   Security,
   Assistant,
 } from "@mui/icons-material";
-import { Box } from '@mui/material';
-import AboutUs from '../components/home-components/AboutUs';
-import Service from '../components/home-components/Service';
-import DigitaMarket from '../components/home-components/DigitalMarket';
-import Industries from '../components/home-components/Industries';
-import LandingPage from '../components/home-components/LandingPage';
-import ContactUs from '../components/home-components/ContactUs';
-import { aboutUs, whyChoose } from '../components/helpers/content';
-import DedicatedCardChoose from '../components/home-components/DedicatedCardChoose';
-import GradientCard from '../common/GradientCard';
 
 const aboutUs = {
   rightSide: {
     name: "About Us",
-    header: "About Us",
-    content: "We are a company that values excellence and innovation...",
+    header: "Uplift your business opportunity with us",
+    content:
+      "We believe in performance, which is a strong predictor of success in various applications such as Web, Mobile or Network applications. With this practice, we have won more than 500 satisfactory clients across the globe and no single client remains dissatisfied yet.",
   },
-  leftSide: {
-    image: "/about-us-image.png",
+  leftSider: {
+    lists: [
+      {
+        icon: <Info sx={{ color: "white" }} />,
+        header: "What's our focus?",
+        content:
+          "Our Company’s focus on rendering next-generation IT and Emerging Automated IOT based Technologies along with Mobile App and digital Services that are precious for present & future generations.",
+      },
+      {
+        icon: <Speed sx={{ color: "white" }} />,
+        header: "Faster solution",
+        content:
+          "Our company’s motto is to find out a quick solution for all tough and challenging problems facing by clients with the help of incredible technologies without damaging the nature’s law.",
+      },
+      {
+        icon: <SupportAgent sx={{ color: "white" }} />,
+        header: "Excellent Customer Support",
+        content:
+          "We’re peopled by young, experienced, energetic, curious, and committed minds who are excited about solving critical issues related to business, Technological problems, ethically.",
+      },
+      {
+        icon: <People sx={{ color: "white" }} />,
+        header: "Team Spirit",
+        content:
+          "Our Company inspires people to think of creativity as well as think out of the box to endeavor the best solutions beneficial for humanity with latest AI, ML, IOT, and Mobile Apps.",
+      },
+    ],
   },
 };
-
-const whyChoose = {
-  lists: [
-    {
-      header: "1+",
-      content: "Years of experience",
-    },
-    {
-      header: "100+",
-      content: "Projects completed",
-    },
-    {
-      header: "50+",
-      content: "Happy clients",
-    },
-    {
-      header: "24/7",
-      content: "Support",
-    },
-  ],
-};
-
-const industries = [
-  {
-    icon: <School sx={{ color: "white" }} />, // Icon for Education
-    header: "Education",
-    content:
-      "You’ll have Mobile App and E-learning web application and Windows application for a user-friendly education practice purpose! Both teachers and students will avoid any complexity!",
-  },
-  {
-    icon: <ShoppingCart sx={{ color: "white" }} />, // Icon for E-commerce
-    header: "E-commerce",
-    content:
-      "Multiple E-commerce sites have been developed by many businesses, but how many are successful! Our B2B and B2C E-commerce sites help the business owners to earn a lot!",
-  },
-  {
-    icon: <HomeWork sx={{ color: "white" }} />, // Icon for Real estate
-    header: "Real estate",
-    content:
-      "Often real estate sites need excellent Graphics design and web design to attract more visitors for any property and this puts an impact on sales volume! We understand well their need!",
-  },
-];
 
 export const staticDataInAboutUsPage = {
   rightSide: {
     name: "About Us",
     header: "Who We Are",
     content: `
-      SkoolSavers is a leading web application development company with years of expertise in providing tailored solutions to clients. We specialize in every stage of web app development, from ideation to execution, and have earned numerous awards for delivering top-tier solutions. Our dedication to utilizing cutting-edge technologies drives us to offer exceptional web application development services.
+      skoolsaver is a leading web application development company with years of expertise in providing tailored solutions to clients. We specialize in every stage of web app development, from ideation to execution, and have earned numerous awards for delivering top-tier solutions. Our dedication to utilizing cutting-edge technologies drives us to offer exceptional web application development services.
       Additionally, we are a full-cycle provider of custom web app development for established brands, emerging enterprises, and tech-driven companies. We help businesses embrace the web’s mobile-centric nature while modernizing legacy systems into innovative cross-platform applications.
     `,
   },
@@ -221,6 +195,72 @@ const digitalMarketing = {
   ],
 };
 
+const industries = {
+  lists: [
+    {
+      icon: <Computer sx={{ color: "white" }} />, // Icon for Information Technologies (IT)
+      header: "Information Technologies (IT)",
+      content:
+        "HR, Finance, Marketing & CRM software solutions, IT Consultancy services are provided by us to other IT companies starting from small scale to MNCs across the globe. Finish the project on time!",
+    },
+    {
+      icon: <Storefront sx={{ color: "white" }} />, // Icon for Retail
+      header: "Retail",
+      content:
+        "We design and develop web applications and mobile apps for retail businesses (Malls) including House products, beauty products, Grocery and Garments stores, etc!",
+    },
+    {
+      icon: <LocalHospital sx={{ color: "white" }} />, // Icon for Healthcare
+      header: "Healthcare",
+      content:
+        "Both Web and Mobile Applications are developed by us for the Healthcare industry to manage their organization efficiently and handle patients in an appropriate flawless way! .",
+    },
+    {
+      icon: <School sx={{ color: "white" }} />, // Icon for Education
+      header: "Education",
+      content:
+        "You’ll have Mobile App and E-learning web application and Windows application for a user-friendly education practice purpose! Both teachers and students will avoid any complexity!",
+    },
+    {
+      icon: <ShoppingCart sx={{ color: "white" }} />, // Icon for E-commerce
+      header: "E-commerce",
+      content:
+        "Multiple E-commerce sites have been developed by many businesses, but how many are successful! Our B2B and B2C E-commerce sites help the business owners to earn a lot!",
+    },
+    {
+      icon: <HomeWork sx={{ color: "white" }} />, // Icon for Real estate
+      header: "Real estate",
+      content:
+        "Often real estate sites need excellent Graphics design and web design to attract more visitors for any property and this puts an impact on sales volume! We understand well their need!",
+    },
+  ],
+};
+
+const whyChoose = {
+  lists: [
+    {
+      header: "5+",
+      content: "Years of experience",
+    },
+    {
+      header: "55+",
+      content: "Dedicated Team",
+    },
+    {
+      header: "2000+",
+      content: "Project done",
+    },
+    {
+      header: "2500+",
+      content: "Trusted Client",
+    },
+    {
+      header: "2000+",
+      content: "Project done",
+    },
+  ],
+};
+
 export const fundamentalPrinciple = {
   lists: [
     {
@@ -297,7 +337,7 @@ const webDesign = {
 };
 
 const webDesign2 = {
-  header: "SkoolSaver : The right choice for your Advanced Web Design need",
+  header: "Skoll Saver : The right choice for your Advanced Web Design need",
   content:
     "We never hesitate to work with small-scale companies or startups even though we have a number of MNCs and corporate companies across the globe.",
   lists: [
@@ -435,7 +475,7 @@ const webDev = {
 };
 
 const webDev2 = {
-  header: "SkoolSaver : the Perfect option for Front-end Web App Development",
+  header: "Skool Saver : the Perfect option for Front-end Web App Development",
   content:
     "We never hesitate to work with small-scale companies or startups even though we have a number of MNCs and corporate companies across the globe.",
   lists: [
@@ -545,7 +585,7 @@ const appDevSkills = {
 };
 
 const appDev2 = {
-  header: "SkoolSaver's : the Perfect option for Mobile App Development",
+  header: "Skool Saver : the Perfect option for Mobile App Development",
   content:
     "We never hesitate to work with small-scale companies or startups even though we have a number of MNCs and corporate companies across the globe.",
   lists: [
@@ -647,7 +687,7 @@ const eComSkills = {
 };
 
 const ecom2 = {
-  header: "SkoolSaver's : The place of eCommerce experts",
+  header: "Skool Saver : The place of eCommerce experts",
   content:
     "We have hired the best-experienced eCommerce developers who ought to fulfill all requirements by your modern eCommerce site requirement with user-friendly features.",
   lists: [
@@ -744,7 +784,7 @@ const digitalSkills = {
 };
 
 const digital2 = {
-  header: "SkoolSaver's : The right choice for your Organic SEO, PPC, and SMO",
+  header: "Skool Saver : The right choice for your Organic SEO, PPC, and SMO",
   content:
     "We incorporate all kinds of latest algorithms recommended by Google towards the Organic SEO, PPC, and Social Media promotions such as Number of Back-links and Keywords ratio with content.",
 
@@ -787,29 +827,6 @@ const digital2 = {
     },
   ],
 };
-
-const heroSectionContent = {
-  header: 'Seamless delivery of IT, Web and mobile App Project',
-  content: 'We leverage the Web and mobile App opportunity to create a solid end-user experience to urge your brand’s augmentation.',
-  readMore: true,
-};
-
-const HomePage = () => {
-  return (
-    <Box sx={{ width: '100%', overflowX: 'hidden' }}>
-      <LandingPage heroSectionContent={heroSectionContent} imgPath={'/home-hero.png'} />
-      <DedicatedCardChoose title=' Why Choose Us' data={whyChoose} />
-      <AboutUs isReverse={true} data={aboutUs} gradientColor={'rgb(16,159, 234)'} />
-      <Service />
-      <DigitaMarket />
-      <Industries />
-      <ContactUs />
-    </Box>
-  );
-};
-
-export default HomePage;
-
 export {
   aboutUs,
   service,
