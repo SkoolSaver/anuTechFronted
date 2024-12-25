@@ -50,36 +50,10 @@ const aboutUs = {
   rightSide: {
     name: "About Us",
     header: "About Us",
-    content:
-      "We believe in performance, which is a strong predictor of success in various applications such as Web, Mobile or Network applications. With this practice, we have won more than 500 satisfactory clients across the globe and no single client remains dissatisfied yet.",
+    content: "We are a company that values excellence and innovation...",
   },
-  leftSider: {
-    lists: [
-      {
-        icon: <Info sx={{ color: "white" }} />,
-        header: "What's our focus?",
-        content:
-          "Our Company’s focus on rendering next-generation IT and Emerging Automated IOT based Technologies along with Mobile App and digital Services that are precious for present & future generations.",
-      },
-      {
-        icon: <Speed sx={{ color: "white" }} />,
-        header: "Faster solution",
-        content:
-          "Our company’s motto is to find out a quick solution for all tough and challenging problems facing by clients with the help of incredible technologies without damaging the nature’s law.",
-      },
-      {
-        icon: <SupportAgent sx={{ color: "white" }} />,
-        header: "Excellent Customer Support",
-        content:
-          "We’re peopled by young, experienced, energetic, curious, and committed minds who are excited about solving critical issues related to business, Technological problems, ethically.",
-      },
-      {
-        icon: <People sx={{ color: "white" }} />,
-        header: "Team Spirit",
-        content:
-          "Our Company inspires people to think of creativity as well as think out of the box to endeavor the best solutions beneficial for humanity with latest AI, ML, IOT, and Mobile Apps.",
-      },
-    ],
+  leftSide: {
+    image: "/about-us-image.png",
   },
 };
 
@@ -205,46 +179,26 @@ const digitalMarketing = {
   ],
 };
 
-const industries = {
-  lists: [
-    {
-      icon: <Computer sx={{ color: "white" }} />, // Icon for Information Technologies (IT)
-      header: "Information Technologies (IT)",
-      content:
-        "HR, Finance, Marketing & CRM software solutions, IT Consultancy services are provided by us to other IT companies starting from small scale to MNCs across the globe. Finish the project on time!",
-    },
-    {
-      icon: <Storefront sx={{ color: "white" }} />, // Icon for Retail
-      header: "Retail",
-      content:
-        "We design and develop web applications and mobile apps for retail businesses (Malls) including House products, beauty products, Grocery and Garments stores, etc!",
-    },
-    {
-      icon: <LocalHospital sx={{ color: "white" }} />, // Icon for Healthcare
-      header: "Healthcare",
-      content:
-        "Both Web and Mobile Applications are developed by us for the Healthcare industry to manage their organization efficiently and handle patients in an appropriate flawless way! .",
-    },
-    {
-      icon: <School sx={{ color: "white" }} />, // Icon for Education
-      header: "Education",
-      content:
-        "You’ll have Mobile App and E-learning web application and Windows application for a user-friendly education practice purpose! Both teachers and students will avoid any complexity!",
-    },
-    {
-      icon: <ShoppingCart sx={{ color: "white" }} />, // Icon for E-commerce
-      header: "E-commerce",
-      content:
-        "Multiple E-commerce sites have been developed by many businesses, but how many are successful! Our B2B and B2C E-commerce sites help the business owners to earn a lot!",
-    },
-    {
-      icon: <HomeWork sx={{ color: "white" }} />, // Icon for Real estate
-      header: "Real estate",
-      content:
-        "Often real estate sites need excellent Graphics design and web design to attract more visitors for any property and this puts an impact on sales volume! We understand well their need!",
-    },
-  ],
-};
+const industries = [
+  {
+    icon: <School sx={{ color: "white" }} />, // Icon for Education
+    header: "Education",
+    content:
+      "You’ll have Mobile App and E-learning web application and Windows application for a user-friendly education practice purpose! Both teachers and students will avoid any complexity!",
+  },
+  {
+    icon: <ShoppingCart sx={{ color: "white" }} />, // Icon for E-commerce
+    header: "E-commerce",
+    content:
+      "Multiple E-commerce sites have been developed by many businesses, but how many are successful! Our B2B and B2C E-commerce sites help the business owners to earn a lot!",
+  },
+  {
+    icon: <HomeWork sx={{ color: "white" }} />, // Icon for Real estate
+    header: "Real estate",
+    content:
+      "Often real estate sites need excellent Graphics design and web design to attract more visitors for any property and this puts an impact on sales volume! We understand well their need!",
+  },
+];
 
 const whyChoose = {
   lists: [
@@ -253,20 +207,16 @@ const whyChoose = {
       content: "Years of experience",
     },
     {
-      header: "2+",
-      content: "Dedicated Team",
+      header: "100+",
+      content: "Projects completed",
     },
     {
-      header: "4+",
-      content: "Project done",
+      header: "50+",
+      content: "Happy clients",
     },
     {
-      header: "5+",
-      content: "Trusted Client",
-    },
-    {
-      header: "10+",
-      content: "Project done",
+      header: "24/7",
+      content: "Support",
     },
   ],
 };
