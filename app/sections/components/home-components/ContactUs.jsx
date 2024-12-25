@@ -87,7 +87,7 @@ const ContactUs = () => {
                       href="gopigollamandala9999@gmail.com"
                       style={{ color: "white", textDecoration: "none" }}
                     >
-                      info@skoolsaver.com
+                      gopigollamandala9999@gmail.com
                     </a>
                   }
                   primaryTypographyProps={{ color: "white" }}
