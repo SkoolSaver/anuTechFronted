@@ -67,25 +67,10 @@ body {
 }
 
 .container {
-  width: 1200px !important;
-  padding: 0 !important;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 64px;
-
-  @media screen and (min-width: 992px) and (max-width: 1439px) {
-    max-width: 1279px !important;
-    padding: 0 !important;
-    margin: 0 80px !important;
-    width: auto !important;
-  }
-
-  @media screen and (max-width: 991px) {
-    max-width: 959px !important;
-    margin: 0 16px !important;
-    padding: 0 !important;
-    width: auto !important;
-  }
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 64px auto;
 }
 
 .gradient-cards {
@@ -197,7 +182,22 @@ body {
     font-size: 14px; /* Adjust font size for smaller screens */
   }
 
-  /* Add other responsive styles for small devices */
+  header {
+    flex-wrap: wrap;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .container {
+    padding: 0 8px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -205,9 +205,12 @@ body {
     font-size: 12px; /* Further adjustments for very small screens */
   }
 
-  /* Example: hide large elements or adjust layout */
   .large-element {
     display: none;
+  }
+
+  header {
+    justify-content: center;
   }
 }
 
@@ -227,17 +230,6 @@ nav {
 
 .hamburger-menu {
   display: none;
-}
-
-@media (max-width: 768px) {
-  nav {
-    display: none;
-  }
-
-  .hamburger-menu {
-    display: block;
-    cursor: pointer;
-  }
 }
 
 /* Form Styles */
