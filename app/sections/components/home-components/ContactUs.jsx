@@ -1,15 +1,15 @@
 import ContactUsForm from '@/app/components/contact-us/ContactUsForm';
 import { nunitoSans, popins } from '@/app/google-fonts/fonts';
-import { Box, Card, Container, List, ListItem, ListItemIcon, ListItemText, Stack, Typography } from '@mui/material';
+import { Box, Card, Container, List, ListItem, ListItemIcon, ListItemText, Stack, Typography, TextField, Button } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 
 const ContactUs = () => {
   return (
-    <Container maxWidth='lg'>
-      <Stack direction='row' justifyContent='space-between' marginBottom={10}>
-        <Box width='40%' display='flex' flexDirection='column' gap={2}>
+    <Container maxWidth='lg' sx={{ mt: 4 }}>
+      <Stack direction={{ xs: 'column', md: 'row' }} justifyContent='space-between' marginBottom={10} spacing={4}>
+        <Box width={{ xs: '100%', md: '40%' }} display='flex' flexDirection='column' gap={2}>
           <Typography variant='h2' fontSize={40} color='white' className={popins.className} fontWeight={600}>
             Let Start Your Project With Us.
           </Typography>
@@ -26,60 +26,53 @@ const ContactUs = () => {
                   <HomeIcon sx={{ color: 'skyblue' }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary='Flat- 203 Sri Venkateswara Heights, Vasavi layout, Pragati Nagar, Hyderabad - 500090'
-                  primaryTypographyProps={{ color: 'white' }}
+                  primary="Flat- 203 Sri Venkateswara Heights, Vasavi layout, Pragati Nagar, Hyderabad - 500090"
+                  primaryTypographyProps={{ color: 'white', className: nunitoSans.className }}
                 />
               </ListItem>
-
-              {/* Mobile Number */}
+              {/* Phone */}
               <ListItem>
                 <ListItemIcon>
                   <PhoneIcon sx={{ color: 'skyblue' }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary={
-                    <a href='tel:+918309782214' style={{ color: 'white', textDecoration: 'none' }}>
-                      +91 8309782214
-                    </a>
-                  }
-                  primaryTypographyProps={{ color: 'white' }}
+                  primary="+91 8309782214"
+                  primaryTypographyProps={{ color: 'white', className: nunitoSans.className }}
                 />
               </ListItem>
-
               {/* Email */}
               <ListItem>
                 <ListItemIcon>
                   <EmailIcon sx={{ color: 'skyblue' }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary={
-                    <a href='mailto:gopigollamandala9999@gmail.com' style={{ color: 'white', textDecoration: 'none' }}>
-                      gopigollamandala9999@gmail.com
-                    </a>
-                  }
-                  primaryTypographyProps={{ color: 'white' }}
+                  primary="gopigollamandala9999@gmail.com"
+                  primaryTypographyProps={{ color: 'white', className: nunitoSans.className }}
                 />
               </ListItem>
             </List>
           </Stack>
         </Box>
-        <Box width='40%'>
-          <Card
-            sx={{
-              width: '100%',
-              p: 5,
-              bgcolor: 'transparent',
-              color: 'white',
-              backgroundImage: 'linear-gradient(180deg, #0e0f0e 0%, #141515 100%)',
-              color: 'white',
-            }}
-          >
-            <Typography variant='h3' className={popins.className} fontSize={35} fontWeight={600}>
-              Get In Touch
-            </Typography>
 
-            <Box mt={4}>
-              <ContactUsForm />
+        <Box width={{ xs: '100%', md: '55%' }}>
+          <Card sx={{ p: 4 }}>
+            <Typography variant="h4" component="h1" gutterBottom>
+              Get in Touch
+            </Typography>
+            <Box
+              component="form"
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 2,
+              }}
+            >
+              <TextField label="Name" variant="outlined" fullWidth />
+              <TextField label="Email" variant="outlined" fullWidth />
+              <TextField label="Message" variant="outlined" fullWidth multiline rows={4} />
+              <Button variant="contained" color="primary" type="submit">
+                Submit
+              </Button>
             </Box>
           </Card>
         </Box>

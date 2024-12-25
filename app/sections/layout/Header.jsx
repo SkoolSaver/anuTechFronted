@@ -130,11 +130,11 @@ const Header = () => {
           alignItems="center"
         >
           {/* Logo */}
-          <Box width="20%" display="flex" alignItems="center">
+          <Box width={isMobile ? "30%" : "20%"} display="flex" alignItems="center">
             <Link href="/" underline="none" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
               <Image 
-                width={150} 
-                height={150} 
+                width={isMobile ? 100 : 150} 
+                height={isMobile ? 100 : 150} 
                 src="/logo.png" 
                 alt="SkoolSaver logo" 
                 style={{ objectFit: 'cover' }} 
