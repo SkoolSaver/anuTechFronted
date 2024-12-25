@@ -12,11 +12,17 @@ import {
   ListItem,
   Stack,
   Typography,
+  IconButton,
+  Drawer,
 } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 import Link from "next/link";
 import { nunitoSans, popins } from "@/app/google-fonts/fonts";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 // services
 const services = [
@@ -92,6 +98,13 @@ const linkObj = {
 
 const Header = () => {
   const pathname = usePathname();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const handleDrawerToggle = () => {
+    setDrawerOpen(!drawerOpen);
+  };
 
   // states
   const [isActiveEle, setIsActiveEle] = React.useState(
@@ -129,153 +142,181 @@ const Header = () => {
             </Link>
           </Box>
           
-          {/* Navigation Links */}
-          <Box 
-            width="55%"  // Adjusted width for links
-            display="flex" 
-            gap={4} 
-            alignItems="center"
-            flexWrap="wrap"  // Allow wrapping if space is limited
-          >
-            <Box
-              onClick={handleclick("home")}
-              component={Link}
-              href="/"
-              className={nunitoSans.className}
-              sx={linkObj}
-              color={isActiveEle === "home" ? "#6674c0" : "white"}
-            >
-              Home
-            </Box>
-            <Box
-              onClick={handleclick("about-us")}
-              component={Link}
-              href="/about-us"
-              className={nunitoSans.className}
-              sx={linkObj}
-              color={isActiveEle === "about-us" ? "#6674c0" : "white"}
-            >
-              About Us
-            </Box>
-
-            <Box
-              onClick={handleclick("acclerator-program")}
-              component={Link}
-              href="/acclerator-program"
-              className={nunitoSans.className}
-              sx={linkObj}
-              color={isActiveEle === "acclerator-program" ? "#6674c0" : "white"}
-            >
-              Accelerator Program
-            </Box>
-
-            {/* Services Dropdown */}
-            <Box
-              display="flex"
-              flexDirection="column"
-              sx={linkObj}
-              height={23}
-              position="relative"
-              className="parent-services"
-            >
-              <Box display="flex">
-                <Typography className={nunitoSans.className}>
-                  Services
-                </Typography>
-                <KeyboardArrowDownIcon />
-              </Box>
-
-              <Stack
-                className="child-services"
-                position="absolute"
-                zIndex={1}
-                top={25}
-                borderTop="2px solid #008080"
+          {isMobile ? (
+            <>
+              <IconButton
+                edge="start"
+                color="inherit"
+                aria-label="menu"
+                onClick={handleDrawerToggle}
               >
-                <List
-                  sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    width: 250,
-                    bgcolor: "white",
-                  }}
-                >
-                  {services.map((service, index) => (
-                    <React.Fragment key={service.id}>
-                      <ListItem sx={{ py: 1.5 }}>
-                        <Box
-                          component="a"
-                          href={service.href}
-                          className={nunitoSans.className}
-                          sx={{
-                            textDecoration: "none",
-                            color: "black",
-                            fontSize: "16px",
-                            transition: "color 0.3s",
-                            "&:hover": {
-                              color: "#3d75ec",
-                            },
-                          }}
-                        >
-                          {service.title}
-                        </Box>
-                      </ListItem>
-                      {index < services.length - 1 && <Divider />}
-                    </React.Fragment>
+                <MenuIcon />
+              </IconButton>
+              <Drawer
+                anchor="right"
+                open={drawerOpen}
+                onClose={handleDrawerToggle}
+              >
+                <List>
+                  {services.map((service) => (
+                    <ListItem button key={service.id}>
+                      <Link href={service.href}>{service.title}</Link>
+                    </ListItem>
                   ))}
                 </List>
-              </Stack>
-            </Box>
+              </Drawer>
+            </>
+          ) : (
+            <>
+              {/* Navigation Links */}
+              <Box 
+                width="55%"  // Adjusted width for links
+                display="flex" 
+                gap={4} 
+                alignItems="center"
+                flexWrap="wrap"  // Allow wrapping if space is limited
+              >
+                <Box
+                  onClick={handleclick("home")}
+                  component={Link}
+                  href="/"
+                  className={nunitoSans.className}
+                  sx={linkObj}
+                  color={isActiveEle === "home" ? "#6674c0" : "white"}
+                >
+                  Home
+                </Box>
+                <Box
+                  onClick={handleclick("about-us")}
+                  component={Link}
+                  href="/about-us"
+                  className={nunitoSans.className}
+                  sx={linkObj}
+                  color={isActiveEle === "about-us" ? "#6674c0" : "white"}
+                >
+                  About Us
+                </Box>
 
-            {/* Other Links */}
-            <Box
-              onClick={handleclick("products")}
-              component={Link}
-              href="/products"
-              className={nunitoSans.className}
-              sx={linkObj}
-              color={isActiveEle === "products" ? "#6674c0" : "white"}
-            >
-              Products
-            </Box>
+                <Box
+                  onClick={handleclick("acclerator-program")}
+                  component={Link}
+                  href="/acclerator-program"
+                  className={nunitoSans.className}
+                  sx={linkObj}
+                  color={isActiveEle === "acclerator-program" ? "#6674c0" : "white"}
+                >
+                  Accelerator Program
+                </Box>
 
-            <Box
-              onClick={handleclick("careers")}
-              component={Link}
-              href="/careers"
-              className={nunitoSans.className}
-              sx={linkObj}
-              color={isActiveEle === "careers" ? "#6674c0" : "white"}
-            >
-              Careers
-            </Box>
+                {/* Services Dropdown */}
+                <Box
+                  display="flex"
+                  flexDirection="column"
+                  sx={linkObj}
+                  height={23}
+                  position="relative"
+                  className="parent-services"
+                >
+                  <Box display="flex">
+                    <Typography className={nunitoSans.className}>
+                      Services
+                    </Typography>
+                    <KeyboardArrowDownIcon />
+                  </Box>
 
-            <Box
-              onClick={handleclick("contact-us")}
-              component={Link}
-              href="/contact-us"
-              className={nunitoSans.className}
-              sx={linkObj}
-              color={isActiveEle === "contact-us" ? "#6674c0" : "white"}
-            >
-              Contact Us
-            </Box>
-          </Box>
+                  <Stack
+                    className="child-services"
+                    position="absolute"
+                    zIndex={1}
+                    top={25}
+                    borderTop="2px solid #008080"
+                  >
+                    <List
+                      sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        width: 250,
+                        bgcolor: "white",
+                      }}
+                    >
+                      {services.map((service, index) => (
+                        <React.Fragment key={service.id}>
+                          <ListItem sx={{ py: 1.5 }}>
+                            <Box
+                              component="a"
+                              href={service.href}
+                              className={nunitoSans.className}
+                              sx={{
+                                textDecoration: "none",
+                                color: "black",
+                                fontSize: "16px",
+                                transition: "color 0.3s",
+                                "&:hover": {
+                                  color: "#3d75ec",
+                                },
+                              }}
+                            >
+                              {service.title}
+                            </Box>
+                          </ListItem>
+                          {index < services.length - 1 && <Divider />}
+                        </React.Fragment>
+                      ))}
+                    </List>
+                  </Stack>
+                </Box>
 
-          {/* Button */}
-          <Box width="25%" display="flex" justifyContent="flex-end">
-            <Button
-              variant="contained"
-              href="/get-a-quote"
-              sx={{
-                bgcolor: "white",
-                color: "black",
-                flexShrink: 0,  // Prevent shrinking
-              }}
-            >
-              Book free Consultation
-            </Button>
-          </Box>
+                {/* Other Links */}
+                <Box
+                  onClick={handleclick("products")}
+                  component={Link}
+                  href="/products"
+                  className={nunitoSans.className}
+                  sx={linkObj}
+                  color={isActiveEle === "products" ? "#6674c0" : "white"}
+                >
+                  Products
+                </Box>
+
+                <Box
+                  onClick={handleclick("careers")}
+                  component={Link}
+                  href="/careers"
+                  className={nunitoSans.className}
+                  sx={linkObj}
+                  color={isActiveEle === "careers" ? "#6674c0" : "white"}
+                >
+                  Careers
+                </Box>
+
+                <Box
+                  onClick={handleclick("contact-us")}
+                  component={Link}
+                  href="/contact-us"
+                  className={nunitoSans.className}
+                  sx={linkObj}
+                  color={isActiveEle === "contact-us" ? "#6674c0" : "white"}
+                >
+                  Contact Us
+                </Box>
+              </Box>
+
+              {/* Button */}
+              <Box width="25%" display="flex" justifyContent="flex-end">
+                <Button
+                  variant="contained"
+                  href="/get-a-quote"
+                  sx={{
+                    bgcolor: "white",
+                    color: "black",
+                    flexShrink: 0,  // Prevent shrinking
+                  }}
+                >
+                  Book free Consultation
+                </Button>
+              </Box>
+            </>
+          )}
         </Stack>
       </Container>
     </AppBar>
