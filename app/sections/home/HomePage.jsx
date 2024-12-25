@@ -17,7 +17,7 @@ const heroSectionContent = {
 
 const HomePage = () => {
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ width: '100%', overflowX: 'hidden' }}>
       <LandingPage heroSectionContent={heroSectionContent} imgPath={'/home-hero.png'} />
       <DedicatedCardChoose title=' Why Choose Us' data={whyChoose} />
       <AboutUs isReverse={true} data={aboutUs} gradientColor={'rgb(16,159, 234)'} />
