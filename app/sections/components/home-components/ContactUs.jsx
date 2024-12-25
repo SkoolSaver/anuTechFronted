@@ -70,7 +70,7 @@ const ContactUs = () => {
                       href="tel:+918309782214"
                       style={{ color: "white", textDecoration: "none" }}
                     >
-                      +91 9876543210
+                      +918309782214
                     </a>
                   }
                   primaryTypographyProps={{ color: "white" }}
