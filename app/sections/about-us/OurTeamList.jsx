@@ -14,16 +14,16 @@ const OurTeamList = () => {
         className={popins.className}
         fontWeight={600}
       >
-        Our Team
+        Our Founding Team
       </Typography>
       <Box
-        my={5}
-        gap={3}
+        my={4}
+        gap={4}
         display="grid"
         gridTemplateColumns={{
           xs: "repeat(1, 1fr)",
           sm: "repeat(2, 1fr)",
-          md: "repeat(3, 1fr)",
+          md: "repeat(4, 1fr)",
         }}
       >
         {[
@@ -48,6 +48,13 @@ const OurTeamList = () => {
             role: "Chief Technology Officer",
             experience: "6+ years",
           },
+          {
+            name: "Rishi Preetham Sanagala",
+            id:15,
+            image: "", // Correct path for public folder
+            role: "Chief Operations Officer",
+            experience: "3+ years", 
+          }
         ].map((user) => {
           return <UserCard key={user.id} {...user} />;
         })}

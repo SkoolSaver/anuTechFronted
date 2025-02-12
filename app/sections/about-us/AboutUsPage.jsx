@@ -12,7 +12,7 @@ import OurTeamList from "./OurTeamList";
 
 const AboutUsPage = () => {
   return (
-    <div>
+    <div style={{ paddingTop: "100px" }}>
       <MainTitle title="About Us" />
       <AboutUs
         isReverse={true}

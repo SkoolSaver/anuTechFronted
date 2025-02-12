@@ -25,7 +25,7 @@ const LandingPage = ({ heroSectionContent, imgPath }) => {
       <Container
         maxWidth="lg"
         sx={{
-          pt: 10,
+          pt: 5,
           pb: 10,
         }}
       >
@@ -93,8 +93,8 @@ const LandingPage = ({ heroSectionContent, imgPath }) => {
                 </Button>
               )}
 
-              <Button variant="outlined" size="large" color="secondary">
-                Get a Quote
+              <Button variant='outlined' size='large' color='secondary' href='/about-us'>
+                Lear More
               </Button>
             </Stack>
           </Box>

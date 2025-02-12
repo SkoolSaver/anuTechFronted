@@ -15,14 +15,22 @@ import {
 } from "@mui/material";
 import React from "react";
 import MainTitle from "../common/MainTitle";
+import { padding } from "@mui/system";
 
 const ContactUsPage = () => {
   return (
     <>
       {/* form and starting template */}
-      <MainTitle title="Contact Us" />
+    
+      
 
-      <Container maxWidth="lg" sx={{ mb: 8 }}>
+      <Container maxWidth="lg"  sx={{
+    paddingTop: '100px', // Fixed padding to ensure the title is not covered
+    mb: 8,
+  }}>
+    <MainTitle title="Contact Us"  sx={{
+    scrollMarginTop: '100px', // Ensure anchor links work correctly
+  }}/>
         <Stack direction="row" spacing={5} alignItems="start">
           <Card
             sx={{

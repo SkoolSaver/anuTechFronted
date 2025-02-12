@@ -6,7 +6,6 @@ import Container from "@mui/material/Container";
 import MenuIcon from "@mui/icons-material/Menu";
 import {
   Box,
-  Button,
   Divider,
   Drawer,
   IconButton,
@@ -114,7 +113,6 @@ const Header = () => {
 
   return (
     <AppBar
-      position="sticky"
       sx={{
         bgcolor: "#0f0f0f",
         boxShadow: "0px 8px 12px rgba(0, 0, 0, 0.2)",
@@ -304,34 +302,26 @@ const Header = () => {
           justifyContent="space-between"
           alignItems="center"
         >
-          <Box width="20%">
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { lg: "none", xs: "block" } }}
-            >
-              <MenuIcon />
-            </IconButton>
-            {/* <Link href="/" underline="none" style={{ textDecoration: "none" }}> */}
-            <Typography
-              variant="h3"
-              className="gradientText"
-              fontSize={35}
-              sx={{ flexGrow: 1, display: { lg: "block", xs: "none" } }}
-            >
-              SkoolSaver
-            </Typography>
-            {/* </Link> */}
-            {/* <Image width={220} height={75} src="/logo.png" alt="logo" /> */}
+          {/* Logo */}
+          <Box width="auto" display="flex" alignItems="center">
+            <Link href="/" underline="none" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
+              <Image 
+                width={90} 
+                height={90} 
+                src="/logo.png"                 alt="SkoolSaver logo"  
+                style={{ objectFit: 'cover' }} 
+              />
+            </Link>
           </Box>
-          <Box
-            width="60%"
-            display="flex"
-            gap={4}
+          
+          {/* Navigation Links */}
+          <Box 
+            width="auto"  // Adjusted width for links
+            display="flex" 
+            gap={4} 
             alignItems="center"
-            sx={{ display: { lg: "flex", xs: "none" } }}
+            flexWrap="wrap"  // Allow wrapping if space is limited
+            marginRight={4}
           >
             <Box
               onClick={handleclick("home")}
@@ -354,13 +344,25 @@ const Header = () => {
               About Us
             </Box>
 
-            {/* service */}
+            <Box
+              onClick={handleclick("acclerator-program")}
+              component={Link}
+              href="/acclerator-program"
+              className={nunitoSans.className}
+              sx={linkObj}
+              color={isActiveEle === "acclerator-program" ? "#6674c0" : "white"}
+            >
+              Our Doctirine
+            </Box>
+            
+            {/* Services Dropdown */}
+            {/*
             <Box
               display="flex"
               flexDirection="column"
               spacing={2}
               sx={linkObj}
-              height={23}
+              height={23} 
               position="relative"
               className="parent-services"
             >
@@ -446,22 +448,6 @@ const Header = () => {
             >
               Contact Us
             </Box>
-            <Divider
-              orientation="vertical"
-              variant="middle"
-              sx={{ height: 40, background: "white", width: 2 }}
-            />
-            <Button
-              variant="contained"
-              size="small"
-              href="/get-a-quote"
-              sx={{
-                bgcolor: "white",
-                color: "black",
-              }}
-            >
-              Book free Consultation
-            </Button>
           </Box>
         </Stack>
       </Container>

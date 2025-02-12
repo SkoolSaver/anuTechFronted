@@ -17,37 +17,15 @@ import EmailIcon from "@mui/icons-material/Email";
 
 const ContactUs = () => {
   return (
-    <Container maxWidth="lg">
-      <Stack
-        direction={{ xs: "column", sm: "row" }}
-        justifyContent="space-between"
-        marginBottom={10}
-      >
-        <Box
-          width={{ xs: "100%", sm: "40%" }}
-          display="flex"
-          flexDirection="column"
-          gap={2}
-        >
-          <Typography
-            variant="h2"
-            fontSize={{ xs: 28, sm: 32, md: 40 }}
-            color="white"
-            className={popins.className}
-            fontWeight={600}
-          >
-            Let Start Your Project With Us.
+    <Container maxWidth='lg'  sx={{
+      marginTop: '20px', // Additional top margin
+      paddingTop: { xs: '100px', sm: '120px' }, // Adjust for different screen sizes
+    }}>
+      <Stack direction='row' justifyContent='space-between' marginBottom={10}>
+        <Box width='40%' display='flex' flexDirection='column' gap={2}>
+          <Typography variant='h2' fontSize={40} color='white' className={popins.className} fontWeight={600}>
+            Let Start Your Journey With SkoolSaver.
           </Typography>
-          <Typography
-            variant="body1"
-            color="white"
-            className={nunitoSans.className}
-          >
-            Let’s know what type of project you need for your business! If still
-            confused, contact us or come to live chat to contact our customer
-            support executives! Your queries will be answered!
-          </Typography>
-
           <Stack>
             <List>
               <ListItem>
@@ -83,11 +61,8 @@ const ContactUs = () => {
                 </ListItemIcon>
                 <ListItemText
                   primary={
-                    <a
-                      href="gopigollamandala9999@gmail.com"
-                      style={{ color: "white", textDecoration: "none" }}
-                    >
-                      gopigollamandala9999@gmail.com
+                    <a href='mailto:saverskool@gmail.com' style={{ color: 'white', textDecoration: 'none' }}>
+                      saverskool@gmail.com
                     </a>
                   }
                   primaryTypographyProps={{ color: "white" }}

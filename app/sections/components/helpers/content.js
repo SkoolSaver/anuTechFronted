@@ -382,10 +382,11 @@ const products = {
     "Explore our diverse range of innovative solutions designed to meet your business needs:",
   lists: [
     {
-      icon: <MobileFriendly sx={{ color: "white" }} />, // Icon for Web Development Solutions
-      header: "Web Development Solutions",
+      icon: <MobileFriendly md={{ color: "white" }} />, // Icon for Web Development Solutions
+      header: "GradGains",
       content:
-        "Develop responsive, mobile-friendly web applications that attract more smartphone users. With rapid growth in mobile users globally, our solutions ensure your website is optimized for visibility and engagement.",
+        "Gradgains is Skoolsaver's innovative app that bridges the gap between students, businesses, and industry experts. It helps students grow by connecting them with mentors for personalized guidance and offering exclusive discounts from businesses. Businesses benefit by engaging with students and creating a new income stream, while industry experts can support the student community and earn secondary income through mentorship. Gradgains fosters collaboration and growth, empowering all participants to thrive together.",
+        img: "logo.png"
     },
     {
       icon: <Language sx={{ color: "white" }} />, // Icon for Well Designed Web App

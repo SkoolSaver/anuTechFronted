@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "next start -p $PORT",
+    "start": "next start -p 3000",
     "build": "next build",
     "lint": "next lint"
   },
@@ -21,6 +21,7 @@
     "react-dom": "^18",
     "react-hook-form": "^7.53.0",
     "react-toastify": "^10.0.5",
+    "sharp": "^0.33.5",
     "yup": "^1.4.0"
   }
 }
