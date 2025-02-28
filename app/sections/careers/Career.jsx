@@ -45,6 +45,9 @@ const StyledLink = styled("a")(({ theme }) => ({
   "&:hover": {
     textDecoration: "underline",
   },
+  "&:focus": {
+    outline: "3px solid #00bcd4", // Focus outline for accessibility
+  },
 }));
 
 function createData(id, designation, experience, location, link) {
@@ -54,31 +57,23 @@ function createData(id, designation, experience, location, link) {
 const rows = [
   createData(1, "Tester", 6.0, "Bengaluru", "https://example.com/apply"),
   createData(2, "Sr.Developer", 9.0, "Bengaluru", "https://example.com/apply"),
-  createData(
-    3,
-    "Devops Engineer",
-    16.0,
-    "Bengaluru",
-    "https://example.com/apply"
-  ),
-  createData(
-    4,
-    "Frontend Developer",
-    3.7,
-    "Bengaluru",
-    "https://example.com/apply"
-  ),
+  createData(3, "Devops Engineer", 16.0, "Bengaluru", "https://example.com/apply"),
+  createData(4, "Frontend Developer", 3.7, "Bengaluru", "https://example.com/apply"),
   createData(5, "UI/UX", 16.0, "Bengaluru", "https://example.com/apply"),
 ];
 
 export default function Career() {
   const openModal = useBoolean();
   const [data, setData] = useState(null);
-  console.log(openModal);
 
   const handleApplyPost = (data) => {
     setData(data);
     openModal.onTrue();
+  };
+
+  const handleCloseModal = () => {
+    openModal.onFalse();
+    setData(null); // Reset data when modal closes
   };
 
   return (
@@ -95,8 +90,11 @@ export default function Career() {
         Available Jobs
       </Typography>
 
-      {/* job apply form */}
-      {openModal.value && <JobApplyForm data={data} openModal={openModal} />}
+      {/* Job Apply Form Modal */}
+      {openModal.value && (
+        <JobApplyForm data={data} openModal={openModal} handleClose={handleCloseModal} />
+      )}
+      
       <TableContainer
         sx={{ background: "#000", marginBottom: "32px" }}
         component={Paper}
@@ -126,6 +124,8 @@ export default function Career() {
                 <StyledTableCell
                   sx={{ cursor: "pointer" }}
                   onClick={() => handleApplyPost(row)}
+                  role="button"
+                  aria-label={`Apply for ${row.designation} position`}
                 >
                   <StyledLink>Apply Here</StyledLink>
                 </StyledTableCell>

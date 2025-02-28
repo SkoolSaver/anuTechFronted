@@ -8,10 +8,6 @@ import {
   Grid,
   IconButton,
   keyframes,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Stack,
   Typography,
 } from "@mui/material";
@@ -63,7 +59,7 @@ const Footer = () => {
             color="#e0e0e0"
             variant="h4"
           >
-            Get here 360 degree advance automated software.
+            Get here 360-degree advance automated software.
           </Typography>
           <Typography px={8} textAlign="center" variant="body1" color="#d0d0d0">
             We leverage the Web and mobile App opportunity to create a solid
@@ -108,7 +104,7 @@ const Footer = () => {
                     width={48}
                     height={48}
                     src={`/${ele.image}`}
-                    alt={`${ele.image}`}
+                    alt={ele.title}
                   />
                   <Typography
                     color="white"
@@ -116,40 +112,6 @@ const Footer = () => {
                     fontWeight={600}
                   >
                     {ele.title}
-                  </Typography>
-                </Card>
-              ))}
-              {Array.from({ length: 11 }).map((_, index) => (
-                <Card
-                  key={`dup-${index}`}
-                  sx={{
-                    p: 2,
-                    borderRadius: 4,
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    width: "180px",
-                    height: 120,
-                    bgcolor: "#050020",
-                    transition: "transform 0.3s ease",
-                    "&:hover": {
-                      transform: "translate(0, 0) scale(1.1)",
-                    },
-                  }}
-                >
-                  <Image
-                    width={48}
-                    height={48}
-                    src={`/asset ${index + 1}.png`}
-                    alt={`Asset ${index + 1}`}
-                  />
-                  <Typography
-                    color="white"
-                    className={popins.className}
-                    fontWeight={600}
-                  >
-                    ReactJS
                   </Typography>
                 </Card>
               ))}
@@ -206,7 +168,7 @@ const Footer = () => {
                       sx={{ color: "green", fontSize: 14 }}
                     />
                     <Typography color="white" variant="h6" fontSize={14}>
-                      Privacy Policy
+                      <a href="/privacy-policy" style={{ color: 'white' }}>Privacy Policy</a>
                     </Typography>
                   </Box>
                   <Box display="flex" alignItems="center">
@@ -214,7 +176,7 @@ const Footer = () => {
                       sx={{ color: "green", fontSize: 14 }}
                     />
                     <Typography color="white" variant="h6" fontSize={14}>
-                      Terms & Conditions
+                      <a href="/terms-conditions" style={{ color: 'white' }}>Terms & Conditions</a>
                     </Typography>
                   </Box>
                 </Stack>
