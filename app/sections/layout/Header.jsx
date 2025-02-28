@@ -13,11 +13,13 @@ import {
   ListItem,
   Stack,
   Typography,
+  Button,
 } from "@mui/material";
 import Link from "next/link";
-import { nunitoSans, popins } from "@/app/google-fonts/fonts";
+import Image from "next/image"; // Correct import for Image component
+import { nunitoSans } from "@/app/google-fonts/fonts"; // Assuming you have nunitoSans defined correctly
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 // services
 const services = [
@@ -81,6 +83,7 @@ const packages = [
     href: "/website-maintenance-package",
   },
 ];
+
 const linkObj = {
   textDecoration: "none",
   fontSize: "1rem",
@@ -90,7 +93,9 @@ const linkObj = {
     color: "#6674c0",
   },
 };
+
 const drawerWidth = 240;
+
 const Header = () => {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -297,30 +302,21 @@ const Header = () => {
       </Drawer>
 
       <Container maxWidth="xl" sx={{ p: 2 }}>
-        <Stack
-          direction="row"
-          justifyContent="space-between"
-          alignItems="center"
-        >
+        <Stack direction="row" justifyContent="space-between" alignItems="center">
           {/* Logo */}
           <Box width="auto" display="flex" alignItems="center">
             <Link href="/" underline="none" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
-              <Image 
-                width={90} 
-                height={90} 
-                src="/logo.png"                 alt="SkoolSaver logo"  
-                style={{ objectFit: 'cover' }} 
-              />
+              <Image width={90} height={90} src="/logo.png" alt="SkoolSaver logo" style={{ objectFit: 'cover' }} />
             </Link>
           </Box>
-          
+
           {/* Navigation Links */}
-          <Box 
-            width="auto"  // Adjusted width for links
-            display="flex" 
-            gap={4} 
+          <Box
+            width="auto"
+            display="flex"
+            gap={4}
             alignItems="center"
-            flexWrap="wrap"  // Allow wrapping if space is limited
+            flexWrap="wrap"
             marginRight={4}
           >
             <Box
@@ -343,7 +339,6 @@ const Header = () => {
             >
               About Us
             </Box>
-
             <Box
               onClick={handleclick("acclerator-program")}
               component={Link}
@@ -352,69 +347,8 @@ const Header = () => {
               sx={linkObj}
               color={isActiveEle === "acclerator-program" ? "#6674c0" : "white"}
             >
-              Our Doctirine
+              Our Doctrine
             </Box>
-            
-            {/* Services Dropdown */}
-            {/*
-            <Box
-              display="flex"
-              flexDirection="column"
-              spacing={2}
-              sx={linkObj}
-              height={23} 
-              position="relative"
-              className="parent-services"
-            >
-              <Box display="flex">
-                <Typography className={nunitoSans.className}>
-                  Services
-                </Typography>
-                <KeyboardArrowDownIcon />
-              </Box>
-
-              <Stack
-                className="child-services"
-                position="absolute"
-                zIndex={1}
-                top={25}
-                borderTop="2px solid #008080"
-              >
-                <List
-                  sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    width: 250,
-                    bgcolor: "white",
-                  }}
-                >
-                  {services.map((service, index) => (
-                    <React.Fragment key={service.id}>
-                      <ListItem sx={{ py: 1.5 }}>
-                        <Box
-                          component="a"
-                          href={service.href}
-                          className={nunitoSans.className}
-                          sx={{
-                            textDecoration: "none",
-                            color: "black",
-                            fontSize: "16px",
-                            transition: "color 0.3s",
-                            "&:hover": {
-                              color: "#3d75ec",
-                            },
-                          }}
-                        >
-                          {service.title}
-                        </Box>
-                      </ListItem>
-                      {index < services.length - 1 && <Divider />}
-                    </React.Fragment>
-                  ))}
-                </List>
-              </Stack>
-            </Box>
-            {/* packages */}
 
             <Box
               onClick={handleclick("products")}

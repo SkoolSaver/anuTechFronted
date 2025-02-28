@@ -2,10 +2,35 @@
 
 import { Box, Button, List, ListItem, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
-import { tiltCard, resetTiltCard } from "../helpers/styling";
 import { useRef, useState } from "react";
 import { nunitoSans, popins } from "@/app/google-fonts/fonts";
 
+// Helper functions for tilt effect
+const tiltCard = (e, card, setMouse, gradientColor) => {
+  const { clientX, clientY } = e;
+  const { width, height, top, left } = card.getBoundingClientRect();
+  const centerX = left + width / 2;
+  const centerY = top + height / 2;
+  const deltaX = (clientX - centerX) / width;
+  const deltaY = (clientY - centerY) / height;
+
+  setMouse({
+    x: clientX,
+    y: clientY,
+  });
+
+  const tiltX = deltaY * 15; // Customize tilt sensitivity
+  const tiltY = -deltaX * 15; // Customize tilt sensitivity
+  card.style.transform = `perspective(1500px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+  card.style.transition = "transform 0.1s ease-out";
+};
+
+const resetTiltCard = (card) => {
+  card.style.transform = "perspective(1500px) rotateX(0deg) rotateY(0deg)";
+  card.style.transition = "transform 0.3s ease-out";
+};
+
+// Styled components
 const AnimatedList = styled(List)`
   display: flex;
   gap: 16px;
@@ -52,66 +77,60 @@ function TiltCard({ isReverse, data, gradientColor }) {
         marginBottom: "120px",
       }}
     >
+      {/* Left Side List */}
       <Stack
         width={{ xs: "100%", md: "45%" }}
         sx={{ overflowY: "scroll", maxHeight: "340px", scrollbarWidth: "none" }}
       >
-        <AnimatedList
-          sx={{
-            display: "flex",
-            gap: "16px",
-            flexDirection: "column",
-            animation: "scroll 20s linear infinite",
-          }}
-        >
-          {data.leftSider.lists.map((e, index) => {
-            return (
-              <ListItem
-                key={index}
+        <AnimatedList>
+          {data.leftSider.lists.map((e, index) => (
+            <ListItem
+              key={index}
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+                gap: "6px",
+                borderBottom: "1px solid #7273744a",
+                paddingBottom: "16px",
+              }}
+            >
+              <Box
                 sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  gap: "6px",
-                  borderBottom: "1px solid #7273744a",
-                  paddingBottom: "16px",
+                  width: "50px",
+                  height: "50px",
+                  borderRadius: "50%",
+                  padding: "8px",
+                  border: "1px solid #fff",
+                  display: "grid",
+                  placeItems: "center",
                 }}
               >
-                <Box
-                  sx={{
-                    width: "50px",
-                    height: "50px",
-                    borderRadius: "50%",
-                    padding: "8px",
-                    border: "1px solid #fff",
-                    display: "grid",
-                    placeItems: "center",
-                  }}
-                >
-                  {e.icon}
-                </Box>
-                <Typography
-                  className={popins.className}
-                  sx={{
-                    marginTop: "4px",
-                    fontWeight: "700",
-                    fontSize: "16px",
-                    color: "white",
-                  }}
-                >
-                  {e.header}
-                </Typography>
-                <Typography
-                  className={nunitoSans.className}
-                  sx={{ fontSize: "14px", color: "#81868f", lineHeight: "1.2" }}
-                >
-                  {e.content}
-                </Typography>
-              </ListItem>
-            );
-          })}
+                {e.icon}
+              </Box>
+              <Typography
+                className={popins.className}
+                sx={{
+                  marginTop: "4px",
+                  fontWeight: "700",
+                  fontSize: "16px",
+                  color: "white",
+                }}
+              >
+                {e.header}
+              </Typography>
+              <Typography
+                className={nunitoSans.className}
+                sx={{ fontSize: "14px", color: "#81868f", lineHeight: "1.2" }}
+              >
+                {e.content}
+              </Typography>
+            </ListItem>
+          ))}
         </AnimatedList>
       </Stack>
+
+      {/* Right Side Content */}
       <Stack width={{ xs: "100%", md: "55%" }} display="flex">
         <Typography sx={{ marginBottom: "8px", color: "white" }}>
           {data.rightSide.name}
@@ -152,9 +171,10 @@ function TiltCard({ isReverse, data, gradientColor }) {
         </Button>
       </Stack>
 
+      {/* Gradient Effect */}
       <Box
         sx={{
-          background: `radial-gradient(${gradientColor},transparent,transparent)`,
+          background: `radial-gradient(${gradientColor}, transparent, transparent)`,
           width: "500px",
           filter: "blur(100px)",
           height: "300px",
