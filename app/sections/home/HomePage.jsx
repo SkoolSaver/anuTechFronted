@@ -14,6 +14,7 @@ const heroSectionContent = {
   header: 'Bridging gaps and building futures',
   content: 'Skoolsaver empowers students by bridging the gap between education and the real world. We provide practical skills, real-time experience, and access to industry experts, technology, and mentors to help students build successful careers in business, tech, and beyond.'
 };
+//hello
 
 const HomePage = () => {
   return (
