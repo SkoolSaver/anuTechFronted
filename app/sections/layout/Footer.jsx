@@ -59,18 +59,17 @@ const Footer = () => {
             color="#e0e0e0"
             variant="h4"
           >
-            Get here 360-degree advance automated software.
+            Connecting Talents & Businesses to Expand Horizons
           </Typography>
           <Typography px={8} textAlign="center" variant="body1" color="#d0d0d0">
-            We leverage the Web and mobile App opportunity to create a solid
-            end-user experience to urge your brand’s augmentation.
+          Join us to create new opportunities through practical training, career guidance, and global connections.
           </Typography>
           <Box display="flex" justifyContent="center">
             <Button
               variant="contained"
               sx={{ bgcolor: "white", color: "black" }}
             >
-              Book free Consultation
+              Connect With Us
             </Button>
           </Box>
         </Stack>
