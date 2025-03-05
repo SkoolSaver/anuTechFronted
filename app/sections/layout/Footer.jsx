@@ -168,7 +168,7 @@ const Footer = () => {
                       sx={{ color: "green", fontSize: 14 }}
                     />
                     <Typography color="white" variant="h6" fontSize={14}>
-                      <a href="/privacy-policy" style={{ color: 'white' }}>Privacy Policy</a>
+                      <a href="/privacy-policy" style={{ color: 'white' }}>Privacy  Policy</a>
                     </Typography>
                   </Box>
                   <Box display="flex" alignItems="center">

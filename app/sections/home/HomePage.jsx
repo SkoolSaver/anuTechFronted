@@ -19,17 +19,7 @@ const heroSectionContent = {
 const HomePage = () => {
   return (
     <Box mt="30px" sx={{ width: '100%' }}>
-      {/* Landing page section */}
       <LandingPage heroSectionContent={heroSectionContent} imgPath="/home-hero.png" />
-
-      {/* Uncomment these if you want to display them later */}
-      {/* 
-        <DedicatedCardChoose title="Why Choose Us" data={whyChoose} />
-        <AboutUs isReverse={true} data={aboutUs} gradientColor="rgb(16,159, 234)" />
-        <DigitalMarket />
-      */}
-
-      {/* Service, Industries, and Contact Us sections */}
       <Service />
       <Industries />
       <ContactUs />

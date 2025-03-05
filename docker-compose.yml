@@ -1,0 +1,13 @@
+services:
+  nextjs-app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app  # Mount local project
+      - /app/node_modules  # Prevents overwriting container's dependencies
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=1
+      - WATCHPACK_POLLING=true
+    command: npm run dev
