@@ -32,7 +32,7 @@ const OurTeamList = () => {
         gridTemplateColumns={{
           xs: "repeat(1, 1fr)",
           sm: "repeat(2, 1fr)",
-          md: "repeat(4, 1fr)",
+          md: "repeat(3, 1fr)",
         }}
       >
         {[
@@ -50,13 +50,13 @@ const OurTeamList = () => {
             role: "Managing Director",
             experience: "3+ years",
           },
-          {
-            name: "Shubham Dubey",
-            id: 14,
-            image: "/images/shubham-dubey.jpg",
-            role: "Chief Technology Officer",
-            experience: "6+ years",
-          },
+          // {
+          //   name: "Shubham Dubey",
+          //   id: 14,
+          //   image: "/images/shubham-dubey.jpg",
+          //   role: "Chief Technology Officer",
+          //   experience: "6+ years",
+          // },
           {
             name: "Rishi Preetham Sanagala",
             id: 15,

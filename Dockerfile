@@ -1,23 +1,23 @@
-# Step 1: Use an official Node.js image as the base image
-FROM node:18-alpine
+# Use a better base image (fixes file watching)
+FROM node:18-bullseye
 
-# Step 2: Set the working directory inside the container
+# Set working directory inside 'app' (matches your local structure)
 WORKDIR /app
 
-# Step 3: Copy package.json and package-lock.json (or yarn.lock) to the container
+# Copy package.json first for efficient caching
 COPY package.json package-lock.json* ./
 
-# Step 4: Install the dependencies inside the container
+# Install dependencies
 RUN npm install
 
-# Step 5: Copy the rest of the project files into the container
-COPY . .
+# Copy everything (app folder included)
+COPY . . 
 
-# Step 6: Build the Next.js project
-RUN npm run build
-
-# Step 7: Expose port 3000 (default port for Next.js)
+# Expose Next.js port
 EXPOSE 3000
 
-# Step 8: Start the Next.js application
-CMD ["npm", "start"]
+# Set environment variable
+ENV NODE_ENV=development
+
+# Run Next.js in dev mode
+CMD ["npm","run","dev"]

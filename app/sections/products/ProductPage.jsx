@@ -9,12 +9,12 @@ const ProductPage = () => {
       content={products.content}
       cardDetails={products}
     >
-      <img
+      {/* <img
         src="/coming-soon.png"
         alt="comming-soon"
         height={100}
         width="100%"
-      />
+      /> */}
     </GradientCard>
   );
 };

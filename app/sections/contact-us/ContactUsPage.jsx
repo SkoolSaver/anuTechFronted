@@ -108,7 +108,7 @@ const ContactUsPage = () => {
             {/* Optional: Regional Offices */}
             <Stack direction="row" spacing={2}>
               {/* Lucknow Office */}
-              <Card
+              {/* <Card
                 sx={{
                   display: "flex",
                   bgcolor: "black",
@@ -157,10 +157,10 @@ const ContactUsPage = () => {
                     Building.
                   </Typography>
                 </Box>
-              </Card>
+              </Card> */}
 
               {/* Bangalore Office */}
-              <Card
+              {/* <Card
                 sx={{
                   display: "flex",
                   bgcolor: "black",
@@ -207,10 +207,10 @@ const ContactUsPage = () => {
                     Chetan Murty , #300, Forest Layout, RVCE Post , Bangalore – 560059,Karnataka
                   </Typography>
                 </Box>
-              </Card>
+              </Card> */}
 
               {/* Pune Office */}
-              <Card
+              {/* <Card
                 sx={{
                   display: "flex",
                   bgcolor: "black",
@@ -257,7 +257,7 @@ const ContactUsPage = () => {
                     1873, Corporate Arena, Keshavrao Bhumkar Chowk, Narhe , Pune – 411041, Maharashtra
                   </Typography>
                 </Box>
-              </Card>
+              </Card> */}
             </Stack>
           </Stack>
         </Stack>

@@ -114,7 +114,7 @@ export const staticDataInAboutUsPage = {
 
 const service = {
   rightSide: {
-    name: "Service",
+    name: "Our Services",
     header: "We offer services for you",
     content:
       "Learn essential programming languages, full-stack development, and industry-standard tools through hands-on projects. Our course equips you with the skills to build real-world applications and excel in your tech career. Get started today and take your coding expertise to the next level!",
@@ -123,34 +123,40 @@ const service = {
     lists: [
       {
         icon: <PhoneAndroid sx={{ color: "white" }} />, // Icon for App Development
-        header: "App Development",
+        header: "Technical Workshops and Training Programs",
         content:
-          "We develop yet excellent effective and flawless Native (Android/iOS) or Hybrid mobile Apps. Our Mobile applications are completely polished and Flawless to win the trust of clients.",
-      },
+          "SKOOLSAVER offers hands-on training in emerging technologies, led by industry experts, enhancing technical skills and entrepreneurship, and preparing participants for real-world challenges through specialized boot camps.",
+        },
       {
         icon: <Web sx={{ color: "white" }} />, // Icon for Web Development
-        header: "Web Development",
+        header: "Career Development Services",
         content:
-          "Our Dynamic, and Responsive Web development with advanced PHP, Java and .Net frameworks rock online with an impressive message to the global viewers with perfect apps.",
-      },
+          "We provide career guidance, resume workshops, mock interviews, and job placements, helping students navigate their careers, with industry connections offering internships, mentorship, and valuable networking opportunities.",
+        },
       {
         icon: <ShoppingCart sx={{ color: "white" }} />, // Icon for E-commerce Solution
-        header: "E-commerce solution",
+        header: "Competitive Events and Hackathons",
         content:
-          "Obtain here B2B and B2C E-commerce applications for your progressing online business across the globe. It’s user-friendly, SEO-friendly, and money yielding online shop for owners.",
-      },
+          "Inter-college competitions, hackathons, and pitching events foster innovation, problem-solving, and real-world impact, supported by industry partners, enhancing students' skills and employability.",
+        },
       {
         icon: <Palette sx={{ color: "white" }} />, // Icon for Graphic Design
-        header: "Graphic Design",
+        header: " Industry Access and Networking",
         content:
-          "Our UX/UI design attracts and leaves a remarkable and special impact definitely on the customer’s mind on a single click and single view! It’s definitely eye-catching and brand shower.",
-      },
+          "We offer direct access to industry experts, mentoring sessions, networking platforms, and industry visits, providing students with real-world exposure, connections, and valuable insights into their chosen fields.",
+        },
       {
         icon: <ImportantDevices sx={{ color: "white" }} />, // Icon for Web Design
-        header: "Web Design",
+        header: "Global Exposure and Connections",
         content:
-          "Creativity is our key factor to spread your brand uniqueness and corporate message on product features. It becomes the key-factor to bind more visitors to sales conversion.",
-      },
+          "International mentorship, cultural exchange programs, and exposure to global tech trends broaden students' perspectives, enhancing their skills, knowledge, and employability in a globalized world.",
+        },
+        {
+          icon: <ImportantDevices sx={{ color: "white" }} />, // Icon for Web Design
+          header: " International Education and Career Exposure",
+          content:
+            "Sessions on international education, career fairs, and guidance on global certifications prepare students for international opportunities, enhancing their careers, and providing a competitive edge in the global job market.",
+          },
     ],
   },
 };
@@ -201,38 +207,38 @@ const industries = {
       icon: <Computer sx={{ color: "white" }} />, // Icon for Information Technologies (IT)
       header: "Information Technologies (IT)",
       content:
-        "HR, Finance, Marketing & CRM software solutions, IT Consultancy services are provided by us to other IT companies starting from small scale to MNCs across the globe. Finish the project on time!",
-    },
+        "Leveraging technology to drive innovation, collaboration, and knowledge sharing, supporting IT startups and professionals globally. We facilitate networking opportunities, training programs, and access to cutting-edge technologies.",
+      },
     {
       icon: <Storefront sx={{ color: "white" }} />, // Icon for Retail
-      header: "Retail",
+      header: "Corporate Social Responsibilities",
       content:
-        "We design and develop web applications and mobile apps for retail businesses (Malls) including House products, beauty products, Grocery and Garments stores, etc!",
-    },
+        "Empowering businesses to drive positive social and environmental change, providing CSR solutions and guidance for sustainable impact. We help companies develop and implement effective CSR strategies.",
+      },
     {
       icon: <LocalHospital sx={{ color: "white" }} />, // Icon for Healthcare
-      header: "Healthcare",
+      header: "Mental Health & Wellness",
       content:
-        "Both Web and Mobile Applications are developed by us for the Healthcare industry to manage their organization efficiently and handle patients in an appropriate flawless way! .",
-    },
+        "Promoting mental wellness, self-care, and emotional intelligence, offering resources and support for individuals and communities. We provide access to mental health professionals, workshops, and educational programs.",
+      },
     {
       icon: <School sx={{ color: "white" }} />, // Icon for Education
       header: "Education",
       content:
-        "You’ll have Mobile App and E-learning web application and Windows application for a user-friendly education practice purpose! Both teachers and students will avoid any complexity!",
-    },
+        "Empowering students through industry exposure, skill development, and mentorship, enhancing employability and innovation in education. We support educational institutions in integrating industry-relevant skills and knowledge into their curricula.",
+      },
     {
       icon: <ShoppingCart sx={{ color: "white" }} />, // Icon for E-commerce
-      header: "E-commerce",
+      header: " International Exposure",
       content:
-        "Multiple E-commerce sites have been developed by many businesses, but how many are successful! Our B2B and B2C E-commerce sites help the business owners to earn a lot!",
-    },
+        "Connecting individuals and businesses to global opportunities, facilitating international collaborations, knowledge sharing, and cultural exchange. We provide access to international networking events, cultural immersion programs, and global market research.",
+      },
     {
       icon: <HomeWork sx={{ color: "white" }} />, // Icon for Real estate
-      header: "Real estate",
+      header: " Entrepreneurship",
       content:
-        "Often real estate sites need excellent Graphics design and web design to attract more visitors for any property and this puts an impact on sales volume! We understand well their need!",
-    },
+        "Fostering entrepreneurship, innovation, and job creation, providing mentorship, networking, and resources for startups and entrepreneurs. We support entrepreneurs in developing business plans, securing funding, and accessing markets.",
+      },
   ],
 };
 
@@ -385,39 +391,41 @@ const products = {
       icon: <MobileFriendly md={{ color: "white" }} />, // Icon for Web Development Solutions
       header: "GradGains",
       content:
-        "Gradgains is Skoolsaver's innovative app that bridges the gap between students, businesses, and industry experts. It helps students grow by connecting them with mentors for personalized guidance and offering exclusive discounts from businesses. Businesses benefit by engaging with students and creating a new income stream, while industry experts can support the student community and earn secondary income through mentorship. Gradgains fosters collaboration and growth, empowering all participants to thrive together.",
+      "Empowering graduates with valuable content, resources, and guidance to launch successful careers. We provide personalized mentorship, industry insights, and networking opportunities to help graduates achieve their goals and succeed in their chosen fields.",
+
+       
         img: "logo.png"
     },
     {
       icon: <Language sx={{ color: "white" }} />, // Icon for Well Designed Web App
-      header: "Well Designed Web App",
+      header: "Skoolsaver Club",
       content:
-        "Our expert designers create highly acclaimed web apps with a focus on aesthetics and functionality, ensuring your satisfaction with a design that elevates your web presence.",
-    },
+        "Fostering student growth through industry exposure, skill development, and mentorship. We partner with educational institutions to enhance employability and innovation, providing students with real-world experience, networking opportunities, and guidance from industry experts.",
+      },
     {
       icon: <HourglassFull sx={{ color: "white" }} />, // Icon for Full Stack Development
-      header: "Full Stack Development",
+      header: "Shiva Reddy Charitable Trust",
       content:
-        "We employ a robust team of full-stack developers skilled in diverse technologies to meet client needs across industries, ensuring versatile, comprehensive solutions for your business.",
-    },
+        "Empowering marginalized communities through food provision, rural women's education, and environmental sustainability. We promote tree planting, support rural development, and provide educational resources to create a better tomorrow for underprivileged communities.",
+      },
     {
       icon: <Security sx={{ color: "white" }} />, // Icon for Advanced Security & Scalability
-      header: "Advanced Security & Scalability",
+      header: "Technical Summit",
       content:
-        "We integrate the latest security protocols to protect your company's vital data, enhancing both security and scalability for long-term success and safeguarding sensitive information.",
-    },
-    {
-      icon: <Assistant sx={{ color: "white" }} />, // Icon for Easy Communication
-      header: "Easy Communication",
-      content:
-        "Our development team acts like an extension of your in-house staff, providing instant communication through phone, internet, or video conferencing to ensure seamless collaboration.",
-    },
-    {
-      icon: <Speed sx={{ color: "white" }} />, // Icon for High Performance & Speed
-      header: "High Performance & Speed",
-      content:
-        "We prioritize lightweight, modern websites that perform at high speeds, ensuring fast data processing and browsing experiences for users around the globe, enhancing overall website performance.",
-    },
+        "Connecting startups, enthusiasts, and leaders worldwide to inspire innovation, collaboration, and knowledge sharing. Our summit drives technological advancements, entrepreneurship, and networking opportunities, fostering a community of innovators and thought leaders in the tech industry. ",
+      },
+    // {
+    //   icon: <Assistant sx={{ color: "white" }} />, // Icon for Easy Communication
+    //   header: "Easy Communication",
+    //   content:
+    //     "Our development team acts like an extension of your in-house staff, providing instant communication through phone, internet, or video conferencing to ensure seamless collaboration.",
+    // },
+    // {
+    //   icon: <Speed sx={{ color: "white" }} />, // Icon for High Performance & Speed
+    //   header: "High Performance & Speed",
+    //   content:
+    //     "We prioritize lightweight, modern websites that perform at high speeds, ensuring fast data processing and browsing experiences for users around the globe, enhancing overall website performance.",
+    // },
   ],
 };
 const webDesignSkills = {
