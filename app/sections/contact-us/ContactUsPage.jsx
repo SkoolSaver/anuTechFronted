@@ -17,31 +17,31 @@ import MainTitle from "../common/MainTitle";
 const ContactUsPage = () => {
   return (
     <>
-      {/* form and starting template */}
       <Container
         maxWidth="lg"
         sx={{
-          paddingTop: '100px', // Fixed padding to ensure the title is not covered
+          paddingTop: '20px', // Fixed padding to ensure the title is not covered
           mb: 8,
         }}
       >
         <MainTitle
           title="Contact Us"
           sx={{
-            scrollMarginTop: '100px', // Ensure anchor links work correctly
+            scrollMarginTop: '50px', // Ensure anchor links work correctly
           }}
         />
 
-        <Stack direction="row" spacing={5} alignItems="start">
+        <Stack 
+          direction={{ xs: "column", md: "row" }} 
+          spacing={5} 
+          alignItems="start"
+        >
           <Card
             sx={{
-              width: "40%",
+              width: { xs: "100%", md: "40%" },
               p: 5,
               bgcolor: "transparent",
-              color: "white",
-              backgroundImage:
-                "linear-gradient(180deg, #0e0f0e 0%, #141515 100%)",
-              color: "white",
+              backgroundImage: "linear-gradient(180deg, #0e0f0e 0%, #141515 100%)",
             }}
           >
             <Typography
@@ -59,7 +59,11 @@ const ContactUsPage = () => {
             </Box>
           </Card>
 
-          <Stack width="45%" spacing={6} pt={5}>
+          <Stack 
+            width={{ xs: "100%", md: "45%" }} 
+            spacing={6} 
+            pt={5}
+          >
             <Typography
               variant="h3"
               fontSize={35}
@@ -99,6 +103,14 @@ const ContactUsPage = () => {
                 >
                   <strong>Flat-203, </strong>
                   Sri Venkateswara Heights, Vasavi layout, Pragati Nagar, Hyderabad - 500090
+                </Typography>
+                {/* Added mail details */}
+                <Typography
+                  color="white"
+                  variant="body1"
+                  className={nunitoSans.className}
+                >
+                  <strong>Email: </strong>	skoolsaverclub.in
                 </Typography>
               </Box>
             </Stack>
@@ -152,9 +164,7 @@ const ContactUsPage = () => {
                     mt={2}
                     color="white"
                   >
-                    Sadhna Bhavan ,1st Floor ,L-3/83 , Sector- D , Aliganj
-                    ,Pincode -226024 , Uttar-Pradesh , landmark- Near UPPSC
-                    Building.
+                    Sadhna Bhavan, 1st Floor, L-3/83, Sector-D, Aliganj, Pincode-226024, Uttar-Pradesh, Landmark: Near UPPSC Building.
                   </Typography>
                 </Box>
               </Card> */}
@@ -204,7 +214,7 @@ const ContactUsPage = () => {
                     className={nunitoSans.className}
                     mt={2}
                   >
-                    Chetan Murty , #300, Forest Layout, RVCE Post , Bangalore – 560059,Karnataka
+                    Chetan Murty, #300, Forest Layout, RVCE Post, Bangalore – 560059, Karnataka
                   </Typography>
                 </Box>
               </Card> */}
@@ -254,7 +264,7 @@ const ContactUsPage = () => {
                     className={nunitoSans.className}
                     mt={2}
                   >
-                    1873, Corporate Arena, Keshavrao Bhumkar Chowk, Narhe , Pune – 411041, Maharashtra
+                    1873, Corporate Arena, Keshavrao Bhumkar Chowk, Narhe, Pune – 411041, Maharashtra
                   </Typography>
                 </Box>
               </Card> */}

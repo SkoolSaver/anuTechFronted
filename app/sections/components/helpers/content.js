@@ -9,6 +9,7 @@ import {
   Timeline,
   PhoneAndroid,
   Web,
+  Public,
   ShoppingCart,
   Palette,
   ImportantDevices,
@@ -25,6 +26,7 @@ import {
   EmojiPeople,
   Favorite,
   AutoAwesome,
+  PeopleAlt,
   CloudSync,
   Webhook,
   IntegrationInstructions,
@@ -34,6 +36,9 @@ import {
   HourglassFull,
   Security,
   Assistant,
+  WorkOutline,
+  EmojiEvents,
+  FlightTakeoff
 } from "@mui/icons-material";
 
 const aboutUs = {
@@ -41,7 +46,7 @@ const aboutUs = {
     name: "About Us",
     header: "Uplift your business opportunity with us",
     content:
-      "We believe in performance, which is a strong predictor of success in various applications such as Web, Mobile or Network applications. With this practice, we have won more than 500 satisfactory clients across the globe and no single client remains dissatisfied yet.",
+      "Skoolsaver was founded with a commitment to revolutionize student learning and skill development. We empower learners by providing unrivaled industry exposure, mentorship opportunities, and real‑time experiences through our Gradgains application, Skoolsaver Club, and Technology Summit. Our growing startup is dedicated to connecting students with leading businesses, fostering innovation, and delivering practical skill training. We continually launch new initiatives that enhance the learning journey, bridge academic and professional worlds, and inspire creativity. Our approach is simple, student‑centric, and results‑driven—ensuring every learner has the tools and opportunities to master new technologies and transform ideas into reality.",
   },
   leftSider: {
     lists: [
@@ -78,8 +83,7 @@ export const staticDataInAboutUsPage = {
     name: "About Us",
     header: "Who We Are",
     content: `
-      skoolsaver is a leading web application development company with years of expertise in providing tailored solutions to clients. We specialize in every stage of web app development, from ideation to execution, and have earned numerous awards for delivering top-tier solutions. Our dedication to utilizing cutting-edge technologies drives us to offer exceptional web application development services.
-      Additionally, we are a full-cycle provider of custom web app development for established brands, emerging enterprises, and tech-driven companies. We help businesses embrace the web’s mobile-centric nature while modernizing legacy systems into innovative cross-platform applications.
+      We are team of young, globally experienced professionals with diverse industry expertise. We are committed to advancing educational excellence by integrating academic learning with practical, real-world applications. Through our innovative platforms Gradgains, Skoolsaver Club, and Technology Summit we create strategic bridges between academia and industry. Our mission is to provide unmatched industry exposure, mentorship, exclusive opportunities, and hands‑on experiences that empower students to master in-demand skills. By driving continuous innovation and fostering sustainable growth, we aim to redefine India’s educational landscape and equip future leaders with the tools necessary for global success.
     `,
   },
   leftSider: {
@@ -88,25 +92,26 @@ export const staticDataInAboutUsPage = {
         icon: <Build sx={{ color: "white" }} />,
         header: "Our Focus",
         content:
-          "Our focus is on delivering next-gen IT solutions and advanced IoT-driven technologies, alongside mobile and digital services that are essential for current and future technological needs.",
+          "Our focus is on providing unparalleled industry exposure, expert mentorship, and hands-on experiences through innovative platforms—ensuring that every student develops the competencies to excel in today’s competitive world.",
+
       },
       {
         icon: <AccessTime sx={{ color: "white" }} />,
-        header: "Rapid Solutions",
+        header: "Our Solutions",
         content:
-          "We prioritize offering fast, reliable solutions to complex challenges faced by our clients, employing advanced technologies in ways that respect and protect natural resources.",
+          "At Skoolsaver, our solutions empower learners through innovative technology, personalized mentorship, and strategic industry partnerships. We deliver practical tools that bridge academic theory with real‑world practice for transformative educational experiences.",
       },
       {
         icon: <Star sx={{ color: "white" }} />,
         header: "Our Goal",
         content:
-          "Our goal is to enable businesses to embrace transformative technologies, enhancing their operations while building long-term trust and delivering outstanding value.",
+          "Our goal is to create a dynamic learning ecosystem that equips students with practical skills and global insights, fostering an environment where academic excellence meets real‑world opportunities.",
       },
       {
         icon: <Timeline sx={{ color: "white" }} />,
         header: "Our Future Vision",
         content:
-          "We aspire to be the most trusted partner in technological innovation, helping companies through product development and digital evolution with innovative solutions that foster growth and lasting partnerships.",
+          "Our vision is to be the leading catalyst for educational transformation in India powered by a passionate team, innovative technology, and strategic partnerships that inspire lifelong learning and global success.",
       },
     ],
   },
@@ -115,44 +120,44 @@ export const staticDataInAboutUsPage = {
 const service = {
   rightSide: {
     name: "Our Services",
-    header: "We offer services for you",
+    header: "We provide the best!",
     content:
-      "Learn essential programming languages, full-stack development, and industry-standard tools through hands-on projects. Our course equips you with the skills to build real-world applications and excel in your tech career. Get started today and take your coding expertise to the next level!",
+      "Our services offer the best-in-industry solutions to bridge the gap between students, universities, and the professional world. Through expert mentorship, real-world exposure, and skill development, we empower students for successful careers, help universities stay industry-aligned, and provide companies with access to job-ready talent and future innovators.",
   },
   leftSider: {
     lists: [
       {
-        icon: <PhoneAndroid sx={{ color: "white" }} />, // Icon for App Development
+        icon: <School sx={{ color: "white" }} />, // Icon for App Development
         header: "Technical Workshops and Training Programs",
         content:
-          "SKOOLSAVER offers hands-on training in emerging technologies, led by industry experts, enhancing technical skills and entrepreneurship, and preparing participants for real-world challenges through specialized boot camps.",
+          "Through Skoolsaver Club we offer hands-on training in emerging technologies, led by industry experts, enhancing technical skills and entrepreneurship, and preparing participants for real-world challenges through specialized boot camps.",
         },
       {
-        icon: <Web sx={{ color: "white" }} />, // Icon for Web Development
+        icon: <WorkOutline sx={{ color: "white" }} />, // Icon for Web Development
         header: "Career Development Services",
         content:
-          "We provide career guidance, resume workshops, mock interviews, and job placements, helping students navigate their careers, with industry connections offering internships, mentorship, and valuable networking opportunities.",
+          "We also provide career guidance, resume workshops, mock interviews, and job placements, helping students navigate their careers, with industry connections offering internships, mentorship, and valuable networking opportunities.",
         },
       {
-        icon: <ShoppingCart sx={{ color: "white" }} />, // Icon for E-commerce Solution
+        icon: <EmojiEvents sx={{ color: "white" }} />, // Icon for E-commerce Solution
         header: "Competitive Events and Hackathons",
         content:
           "Inter-college competitions, hackathons, and pitching events foster innovation, problem-solving, and real-world impact, supported by industry partners, enhancing students' skills and employability.",
         },
       {
-        icon: <Palette sx={{ color: "white" }} />, // Icon for Graphic Design
+        icon: <PeopleAlt sx={{ color: "white" }} />, // Icon for Graphic Design
         header: " Industry Access and Networking",
         content:
           "We offer direct access to industry experts, mentoring sessions, networking platforms, and industry visits, providing students with real-world exposure, connections, and valuable insights into their chosen fields.",
         },
       {
-        icon: <ImportantDevices sx={{ color: "white" }} />, // Icon for Web Design
+        icon: <Public sx={{ color: "white" }} />, // Icon for Web Design
         header: "Global Exposure and Connections",
         content:
           "International mentorship, cultural exchange programs, and exposure to global tech trends broaden students' perspectives, enhancing their skills, knowledge, and employability in a globalized world.",
         },
         {
-          icon: <ImportantDevices sx={{ color: "white" }} />, // Icon for Web Design
+          icon: <FlightTakeoff sx={{ color: "white" }} />, // Icon for Web Design
           header: " International Education and Career Exposure",
           content:
             "Sessions on international education, career fairs, and guidance on global certifications prepare students for international opportunities, enhancing their careers, and providing a competitive edge in the global job market.",
@@ -210,7 +215,7 @@ const industries = {
         "Leveraging technology to drive innovation, collaboration, and knowledge sharing, supporting IT startups and professionals globally. We facilitate networking opportunities, training programs, and access to cutting-edge technologies.",
       },
     {
-      icon: <Storefront sx={{ color: "white" }} />, // Icon for Retail
+      icon: <Public sx={{ color: "white" }} />, // Icon for Retail
       header: "Corporate Social Responsibilities",
       content:
         "Empowering businesses to drive positive social and environmental change, providing CSR solutions and guidance for sustainable impact. We help companies develop and implement effective CSR strategies.",
@@ -228,13 +233,13 @@ const industries = {
         "Empowering students through industry exposure, skill development, and mentorship, enhancing employability and innovation in education. We support educational institutions in integrating industry-relevant skills and knowledge into their curricula.",
       },
     {
-      icon: <ShoppingCart sx={{ color: "white" }} />, // Icon for E-commerce
+      icon: <FlightTakeoff sx={{ color: "white" }} />, // Icon for E-commerce
       header: " International Exposure",
       content:
         "Connecting individuals and businesses to global opportunities, facilitating international collaborations, knowledge sharing, and cultural exchange. We provide access to international networking events, cultural immersion programs, and global market research.",
       },
     {
-      icon: <HomeWork sx={{ color: "white" }} />, // Icon for Real estate
+      icon: <Storefront sx={{ color: "white" }} />, // Icon for Real estate
       header: " Entrepreneurship",
       content:
         "Fostering entrepreneurship, innovation, and job creation, providing mentorship, networking, and resources for startups and entrepreneurs. We support entrepreneurs in developing business plans, securing funding, and accessing markets.",
@@ -266,28 +271,28 @@ const whyChoose = {
 export const fundamentalPrinciple = {
   lists: [
     {
-      header: "Leadership",
+      header: "Innovation",
       content:
-        "We develop leaders in our company—individuals who are exceptional at what they do and strive to do more.",
-      icon: <EmojiPeople sx={{ color: "white", fontSize: 30 }} />,
-    },
-    {
-      header: "Excellence",
-      content:
-        "We uphold high standards at work by working as a team and individually, attaining goals, and taking ownership.",
+        "We foster a culture of continuous innovation, equipping students with cutting-edge skills and solutions to thrive in a rapidly evolving industry.",
       icon: <Star sx={{ color: "white", fontSize: 30 }} />,
     },
     {
-      header: "Agility",
+      header: "Collaboration",
       content:
-        "In order to give our clients better solutions, we continue to be adaptable to the evolving technological world.",
+        "We bridge the gap between students, universities, and industry by creating strong partnerships, mentorship networks, and real-world opportunities.",
+      icon: <EmojiPeople sx={{ color: "white", fontSize: 30 }} />,
+    },
+    {
+      header: "Growth",
+      content:
+        "We empower students to grow into industry-ready professionals through hands-on training, entrepreneurship support, and career development.",
       icon: <Speed sx={{ color: "white", fontSize: 30 }} />,
     },
     {
-      header: "Passion",
+      header: "Impact",
       content:
-        "We are passionately determined to realize our mission of having a significant effect on the economy, society, and environment.",
-      icon: <Favorite sx={{ color: "white", fontSize: 30 }} />,
+        "We are committed to creating a lasting impact by transforming education, fostering employability, and driving meaningful change in society.",
+      icon: <Public sx={{ color: "white", fontSize: 30 }} />,
     },
   ],
 };
@@ -388,38 +393,39 @@ const products = {
     "Explore our diverse range of innovative solutions designed to meet your business needs:",
   lists: [
     {
+      icon: <Language sx={{ color: "white" }} />, // Icon for Well Designed Web App
+      header: "Skoolsaver Club",
+      content:
+        "Skool Saver Club is an exclusive initiative designed to establish a vibrant presence in educational institutions. It offers students unparalleled industry exposure, mentorship programs, networking opportunities, and international experiences. By bridging academia with the professional world, the club fosters innovation, professional growth, and community engagement—ensuring students are well‑equipped to succeed in today’s competitive environment with excellence.",
+      },
+    {
+      
       icon: <MobileFriendly md={{ color: "white" }} />, // Icon for Web Development Solutions
       header: "GradGains",
       content:
-      "Empowering graduates with valuable content, resources, and guidance to launch successful careers. We provide personalized mentorship, industry insights, and networking opportunities to help graduates achieve their goals and succeed in their chosen fields.",
+      "Gradgains is an innovative platform connecting students with nearby businesses and startups. It provides exclusive discounts, internship opportunities, part-time or full‑time work opportunities, and expert mentor matching services. This one‑stop solution empowers students to enhance their career prospects, develop professional networks, and acquire essential industry skills—bridging the gap between academia and industry efficiently.",
 
        
         img: "logo.png"
     },
     {
-      icon: <Language sx={{ color: "white" }} />, // Icon for Well Designed Web App
-      header: "Skoolsaver Club",
-      content:
-        "Fostering student growth through industry exposure, skill development, and mentorship. We partner with educational institutions to enhance employability and innovation, providing students with real-world experience, networking opportunities, and guidance from industry experts.",
-      },
-    {
       icon: <HourglassFull sx={{ color: "white" }} />, // Icon for Full Stack Development
       header: "Shiva Reddy Charitable Trust",
       content:
-        "Empowering marginalized communities through food provision, rural women's education, and environmental sustainability. We promote tree planting, support rural development, and provide educational resources to create a better tomorrow for underprivileged communities.",
+        "Shiva Reedy Charitable Trust is a founder’s initiative dedicated to uplifting underprivileged communities. Focused on educating underprivileged girl children and preserving the environment, the Trust delivers impactful educational programs, community outreach, and sustainable development projects. By nurturing talent and empowering future generations, this initiative transforms lives, drives social change, and fosters environmental stewardship for lasting progress.",
       },
     {
       icon: <Security sx={{ color: "white" }} />, // Icon for Advanced Security & Scalability
       header: "Technical Summit",
       content:
-        "Connecting startups, enthusiasts, and leaders worldwide to inspire innovation, collaboration, and knowledge sharing. Our summit drives technological advancements, entrepreneurship, and networking opportunities, fostering a community of innovators and thought leaders in the tech industry. ",
+        "Technology Summit is a premier global event uniting innovators, entrepreneurs, and student talent in one dynamic forum. It features ideathons, pitching competitions, networking sessions, and collaborative workshops that foster the spirit of technology, entrepreneurship, and innovation. The summit provides an unparalleled platform for exchanging ideas, forming strategic partnerships, and catalyzing transformative change across global industries.",
       },
     // {
     //   icon: <Assistant sx={{ color: "white" }} />, // Icon for Easy Communication
     //   header: "Easy Communication",
     //   content:
     //     "Our development team acts like an extension of your in-house staff, providing instant communication through phone, internet, or video conferencing to ensure seamless collaboration.",
-    // },
+    // },Fostering student growth through industry exposure, skill development, and mentorship. We partner with e
     // {
     //   icon: <Speed sx={{ color: "white" }} />, // Icon for High Performance & Speed
     //   header: "High Performance & Speed",

@@ -89,14 +89,14 @@ const ContactUs = () => {
               <ListItemText
                 primary={
                   <a 
-                    href='mailto:saverskool@gmail.com' 
+                    href='mailto:skoolsaverclub.in' 
                     style={{ 
                       color: 'white', 
                       textDecoration: 'none',
                       wordBreak: 'break-word'
                     }}
                   >
-                    saverskool@gmail.com
+                    skoolsaverclub.in
                   </a>
                 }
                 primaryTypographyProps={{ 
