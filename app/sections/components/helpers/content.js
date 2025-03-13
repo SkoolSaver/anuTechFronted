@@ -38,8 +38,11 @@ import {
   Assistant,
   WorkOutline,
   EmojiEvents,
-  FlightTakeoff
+  FlightTakeoff,
+  Translate
 } from "@mui/icons-material";
+import Skoolsaver from "@/app/skoolsaverdata/skoolsaverdata";
+import { style } from "@mui/system";
 
 const aboutUs = {
   rightSide: {
@@ -268,6 +271,7 @@ const whyChoose = {
   ],
 };
 
+
 export const fundamentalPrinciple = {
   lists: [
     {
@@ -393,13 +397,15 @@ const products = {
     "Explore our diverse range of innovative solutions designed to meet your business needs:",
   lists: [
     {
+   
+     href: "/skoolsaverdata",
       icon: <Language sx={{ color: "white" }} />, // Icon for Well Designed Web App
       header: "Skoolsaver Club",
       content:
         "Skool Saver Club is an exclusive initiative designed to establish a vibrant presence in educational institutions. It offers students unparalleled industry exposure, mentorship programs, networking opportunities, and international experiences. By bridging academia with the professional world, the club fosters innovation, professional growth, and community engagement—ensuring students are well‑equipped to succeed in today’s competitive environment with excellence.",
       },
     {
-      
+      href: "/GradGainsdata",
       icon: <MobileFriendly md={{ color: "white" }} />, // Icon for Web Development Solutions
       header: "GradGains",
       content:
@@ -408,13 +414,14 @@ const products = {
        
         img: "logo.png"
     },
-    {
+    { href: "/CharitableTrustdata",
       icon: <HourglassFull sx={{ color: "white" }} />, // Icon for Full Stack Development
       header: "Shiva Reddy Charitable Trust",
       content:
         "Shiva Reedy Charitable Trust is a founder’s initiative dedicated to uplifting underprivileged communities. Focused on educating underprivileged girl children and preserving the environment, the Trust delivers impactful educational programs, community outreach, and sustainable development projects. By nurturing talent and empowering future generations, this initiative transforms lives, drives social change, and fosters environmental stewardship for lasting progress.",
       },
     {
+      href: "/TechnicalSummit",
       icon: <Security sx={{ color: "white" }} />, // Icon for Advanced Security & Scalability
       header: "Technical Summit",
       content:

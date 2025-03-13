@@ -24,6 +24,7 @@ const tiltCard = (e, card, setMouse, gradientColor) => {
   card.style.borderRight = '';
   card.style.borderTop = '';
   card.style.borderBottom = '';
+  
 
   let borderColor = `2px solid ${gradientColor}`;
   // Apply border to nearest side
