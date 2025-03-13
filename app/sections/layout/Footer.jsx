@@ -68,6 +68,7 @@ const Footer = () => {
             <Button
               variant="contained"
               sx={{ bgcolor: "white", color: "black" }}
+              href="/contact-us"
             >
               Connect With Us
             </Button>

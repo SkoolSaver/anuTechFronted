@@ -7,11 +7,10 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { FormProvider, useForm } from "react-hook-form";
 import { Button } from "@mui/material";
 import Grid from "@mui/material/Grid";
-import { getInTouch } from "@/app/utils/api";
 import { toast } from "react-toastify";
 
 const ContactUsForm = () => {
-  // schema
+  // Schema
   const schema = yup.object().shape({
     username: yup.string().required("Name is required"),
     email: yup
@@ -20,12 +19,12 @@ const ContactUsForm = () => {
       .required("Email is required"),
     mobno: yup
       .string()
-      .matches(/^[0-9]+$/, "Mobile number must be digits only") // Mobile number validation
+      .matches(/^[0-9]+$/, "Mobile number must be digits only")
       .required("Mobile number is required"),
     message: yup.string().required("Message is required"),
   });
 
-  // default values
+  // Default values
   const defaultValues = {
     username: "",
     email: "",
@@ -44,14 +43,21 @@ const ContactUsForm = () => {
     formState: { isSubmitting },
   } = methods;
 
-  const onSubmit = handleSubmit(async (data) => {
-    const payload = { ...data };
-    delete payload.isVerified; // If `isVerified` exists, make sure it's removed before sending
+  const onSubmit = async (data) => {
+    alert("Hello! Form submitted "); 
+    console.log("Submitted Data:", data); 
 
     try {
-      const response = await getInTouch(payload);
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-      if (response.error) {
+      const result = await response.json();
+      if (result.error) {
         reset();
         toast.error("Something went wrong");
       } else {
@@ -60,14 +66,14 @@ const ContactUsForm = () => {
       }
     } catch (error) {
       console.error(error);
-      reset(); // Reset in case of error to clear the form
+      reset();
       toast.error("An unexpected error occurred");
     }
-  });
+  };
 
   return (
     <FormProvider {...methods}>
-      <form onSubmit={onSubmit}>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <MUILabel label="Name" htmlFor="username" required />
@@ -96,7 +102,7 @@ const ContactUsForm = () => {
               color="info"
               variant="contained"
               size="large"
-              disabled={isSubmitting} // Disable the submit button while submitting
+              disabled={isSubmitting} 
             >
               Submit
             </Button>
