@@ -100,9 +100,18 @@ const ContactUsForm = () => {
               type="submit"
               fullWidth
               color="info"
-              variant="contained"
+              variant="outlined"
               size="large"
               disabled={isSubmitting} 
+              sx={{
+                    '&:hover': {
+                      backgroundColor: '#1976d2', // or your preferred blue shade
+                      color: 'white',
+                      borderColor: '#1976d2',
+                    },
+                   
+                    
+                  }}
             >
               Submit
             </Button>

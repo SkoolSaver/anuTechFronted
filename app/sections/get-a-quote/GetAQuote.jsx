@@ -14,6 +14,7 @@ import RHFAutocomplete from "@/app/react-hook-form/rhf-autocomplete";
 import { priceRangeOptions, serviceOptions } from "@/app/utils/constants";
 import { getAQuote } from "@/app/utils/api";
 import { toast } from 'react-toastify';
+import { padding } from "@mui/system";
 
 const GetAQuote = () => {
   const schema = yup.object().shape({
@@ -67,7 +68,7 @@ const GetAQuote = () => {
   return (
     <div>
       <MainTitle title="Quotation And Consultation" />
-      <Container maxWidth="sm" sx={{ py: 5 }}>
+      <Container maxWidth="sm" sx={{ py: 5, pb:10 }}>
         <FormProvider {...methods}>
           <Typography
             py={2}
@@ -79,7 +80,7 @@ const GetAQuote = () => {
             Get A Free Quote
           </Typography>
           <form onSubmit={onsubmit}>
-            <Grid container spacing={2}>
+            <Grid container direction="column" spacing={2}>
               <Grid item xs={12}>
                 <MUILabel label="Full Name" htmlFor="full_name" required />
                 <RHFTextfield label="Enter Your Full Name" name="full_name" />
@@ -108,10 +109,26 @@ const GetAQuote = () => {
                 <MUILabel label="Tell me About Your Project" htmlFor="about_project" required />
                 <RHFTextfield name="about_project" label="About Project" minRows={5} multiline />
               </Grid>
-              <Grid item xs={12}>
-                <Button type="submit" fullWidth color="info" variant="contained" size="large">
+              <Grid item xs={12} sx={{paddingTop:'10px'}}>
+               <Button
+                  type="submit"
+                  fullWidth
+                  color="info"
+                  variant="outlined"
+                  size="large"
+                  sx={{
+                    '&:hover': {
+                      backgroundColor: '#1976d2', // or your preferred blue shade
+                      color: 'white',
+                      borderColor: '#1976d2',
+                    },
+                    fontSize:'1.1rem',
+                    
+                  }}
+                >
                   Submit
-                </Button>
+              </Button>
+
               </Grid>
             </Grid>
           </form>
@@ -122,3 +139,4 @@ const GetAQuote = () => {
 };
 
 export default GetAQuote;
+

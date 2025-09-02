@@ -110,7 +110,7 @@ const ContactUsPage = () => {
                   variant="body1"
                   className={nunitoSans.className}
                 >
-                  <strong>Email: </strong>	skoolsaverclub.in
+                  <strong>Contact : </strong>+91 83097 82214	
                 </Typography>
               </Box>
             </Stack>

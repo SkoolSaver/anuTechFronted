@@ -39,7 +39,7 @@ import {
   WorkOutline,
   EmojiEvents,
   FlightTakeoff,
-  Translate
+  Translate,
 } from "@mui/icons-material";
 import Skoolsaver from "@/app/skoolsaverdata/skoolsaverdata";
 import { style } from "@mui/system";
@@ -96,7 +96,6 @@ export const staticDataInAboutUsPage = {
         header: "Our Focus",
         content:
           "Our focus is on providing unparalleled industry exposure, expert mentorship, and hands-on experiences through innovative platforms—ensuring that every student develops the competencies to excel in today’s competitive world.",
-
       },
       {
         icon: <AccessTime sx={{ color: "white" }} />,
@@ -134,37 +133,37 @@ const service = {
         header: "Technical Workshops and Training Programs",
         content:
           "Through Skoolsaver Club we offer hands-on training in emerging technologies, led by industry experts, enhancing technical skills and entrepreneurship, and preparing participants for real-world challenges through specialized boot camps.",
-        },
+      },
       {
         icon: <WorkOutline sx={{ color: "white" }} />, // Icon for Web Development
         header: "Career Development Services",
         content:
           "We also provide career guidance, resume workshops, mock interviews, and job placements, helping students navigate their careers, with industry connections offering internships, mentorship, and valuable networking opportunities.",
-        },
+      },
       {
         icon: <EmojiEvents sx={{ color: "white" }} />, // Icon for E-commerce Solution
         header: "Competitive Events and Hackathons",
         content:
           "Inter-college competitions, hackathons, and pitching events foster innovation, problem-solving, and real-world impact, supported by industry partners, enhancing students' skills and employability.",
-        },
+      },
       {
         icon: <PeopleAlt sx={{ color: "white" }} />, // Icon for Graphic Design
         header: " Industry Access and Networking",
         content:
           "We offer direct access to industry experts, mentoring sessions, networking platforms, and industry visits, providing students with real-world exposure, connections, and valuable insights into their chosen fields.",
-        },
+      },
       {
         icon: <Public sx={{ color: "white" }} />, // Icon for Web Design
         header: "Global Exposure and Connections",
         content:
           "International mentorship, cultural exchange programs, and exposure to global tech trends broaden students' perspectives, enhancing their skills, knowledge, and employability in a globalized world.",
-        },
-        {
-          icon: <FlightTakeoff sx={{ color: "white" }} />, // Icon for Web Design
-          header: " International Education and Career Exposure",
-          content:
-            "Sessions on international education, career fairs, and guidance on global certifications prepare students for international opportunities, enhancing their careers, and providing a competitive edge in the global job market.",
-          },
+      },
+      {
+        icon: <FlightTakeoff sx={{ color: "white" }} />, // Icon for Web Design
+        header: " International Education and Career Exposure",
+        content:
+          "Sessions on international education, career fairs, and guidance on global certifications prepare students for international opportunities, enhancing their careers, and providing a competitive edge in the global job market.",
+      },
     ],
   },
 };
@@ -216,37 +215,37 @@ const industries = {
       header: "Information Technologies (IT)",
       content:
         "Leveraging technology to drive innovation, collaboration, and knowledge sharing, supporting IT startups and professionals globally. We facilitate networking opportunities, training programs, and access to cutting-edge technologies.",
-      },
+    },
     {
       icon: <Public sx={{ color: "white" }} />, // Icon for Retail
       header: "Corporate Social Responsibilities",
       content:
         "Empowering businesses to drive positive social and environmental change, providing CSR solutions and guidance for sustainable impact. We help companies develop and implement effective CSR strategies.",
-      },
+    },
     {
       icon: <LocalHospital sx={{ color: "white" }} />, // Icon for Healthcare
       header: "Mental Health & Wellness",
       content:
         "Promoting mental wellness, self-care, and emotional intelligence, offering resources and support for individuals and communities. We provide access to mental health professionals, workshops, and educational programs.",
-      },
+    },
     {
       icon: <School sx={{ color: "white" }} />, // Icon for Education
       header: "Education",
       content:
         "Empowering students through industry exposure, skill development, and mentorship, enhancing employability and innovation in education. We support educational institutions in integrating industry-relevant skills and knowledge into their curricula.",
-      },
+    },
     {
       icon: <FlightTakeoff sx={{ color: "white" }} />, // Icon for E-commerce
       header: " International Exposure",
       content:
         "Connecting individuals and businesses to global opportunities, facilitating international collaborations, knowledge sharing, and cultural exchange. We provide access to international networking events, cultural immersion programs, and global market research.",
-      },
+    },
     {
       icon: <Storefront sx={{ color: "white" }} />, // Icon for Real estate
       header: " Entrepreneurship",
       content:
         "Fostering entrepreneurship, innovation, and job creation, providing mentorship, networking, and resources for startups and entrepreneurs. We support entrepreneurs in developing business plans, securing funding, and accessing markets.",
-      },
+    },
   ],
 };
 
@@ -270,7 +269,6 @@ const whyChoose = {
     },
   ],
 };
-
 
 export const fundamentalPrinciple = {
   lists: [
@@ -397,36 +395,39 @@ const products = {
     "Explore our diverse range of innovative solutions designed to meet your business needs:",
   lists: [
     {
-   
-     href: "/skoolsaverdata",
+      href: "/skoolsaverdata",
       icon: <Language sx={{ color: "white" }} />, // Icon for Well Designed Web App
       header: "Skoolsaver Club",
       content:
         "Skool Saver Club is an exclusive initiative designed to establish a vibrant presence in educational institutions. It offers students unparalleled industry exposure, mentorship programs, networking opportunities, and international experiences. By bridging academia with the professional world, the club fosters innovation, professional growth, and community engagement—ensuring students are well‑equipped to succeed in today’s competitive environment with excellence.",
-      },
+      img: "/coming-soon.png",
+    },
     {
       href: "/GradGainsdata",
       icon: <MobileFriendly md={{ color: "white" }} />, // Icon for Web Development Solutions
       header: "GradGains",
       content:
-      "Gradgains is an innovative platform connecting students with nearby businesses and startups. It provides exclusive discounts, internship opportunities, part-time or full‑time work opportunities, and expert mentor matching services. This one‑stop solution empowers students to enhance their career prospects, develop professional networks, and acquire essential industry skills—bridging the gap between academia and industry efficiently.",
+        "Gradgains is an innovative platform connecting students with nearby businesses and startups. It provides exclusive discounts, internship opportunities, part-time or full‑time work opportunities, and expert mentor matching services. This one‑stop solution empowers students to enhance their career prospects, develop professional networks, and acquire essential industry skills—bridging the gap between academia and industry efficiently.",
 
-       
-        img: "logo.png"
+      // img: "logo.png",
+      img: "/coming-soon.png",
     },
-    { href: "/CharitableTrustdata",
+    {
+      href: "/CharitableTrustdata",
       icon: <HourglassFull sx={{ color: "white" }} />, // Icon for Full Stack Development
       header: "Shiva Reddy Charitable Trust",
       content:
         "Shiva Reedy Charitable Trust is a founder’s initiative dedicated to uplifting underprivileged communities. Focused on educating underprivileged girl children and preserving the environment, the Trust delivers impactful educational programs, community outreach, and sustainable development projects. By nurturing talent and empowering future generations, this initiative transforms lives, drives social change, and fosters environmental stewardship for lasting progress.",
-      },
+      img: "/coming-soon.png",
+    },
     {
       href: "/TechnicalSummit",
       icon: <Security sx={{ color: "white" }} />, // Icon for Advanced Security & Scalability
       header: "Technical Summit",
       content:
         "Technology Summit is a premier global event uniting innovators, entrepreneurs, and student talent in one dynamic forum. It features ideathons, pitching competitions, networking sessions, and collaborative workshops that foster the spirit of technology, entrepreneurship, and innovation. The summit provides an unparalleled platform for exchanging ideas, forming strategic partnerships, and catalyzing transformative change across global industries.",
-      },
+      img: "/coming-soon.png",
+    },
     // {
     //   icon: <Assistant sx={{ color: "white" }} />, // Icon for Easy Communication
     //   header: "Easy Communication",

@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import { Box, Button, Container, Typography } from "@mui/material";
 import React from "react";
@@ -7,10 +7,10 @@ import { popins } from "@/app/google-fonts/fonts";
 import { useRouter } from "next/navigation";
 
 const OurTeamList = () => {
-  const router = useRouter(); 
+  const router = useRouter();
 
   const handleViewAllClick = () => {
-    router.push("/team"); 
+    router.push("/team");
   };
 
   return (
@@ -32,7 +32,7 @@ const OurTeamList = () => {
         gridTemplateColumns={{
           xs: "repeat(1, 1fr)",
           sm: "repeat(2, 1fr)",
-          md: "repeat(3, 1fr)",
+          md: "repeat(2, 1fr)",
         }}
       >
         {[
@@ -50,19 +50,20 @@ const OurTeamList = () => {
             role: "Managing Director",
             experience: "3+ years",
           },
-          // {
-          //   name: "Shubham Dubey",
-          //   id: 14,
-          //   image: "/images/shubham-dubey.jpg",
-          //   role: "Chief Technology Officer",
-          //   experience: "6+ years",
-          // },
+
           {
             name: "Rishi Preetham Sanagala",
             id: 15,
             image: "/images/rishi.jpg",
             role: "Chief Operations Officer",
             experience: "3+ years",
+          },
+          {
+            name: "Siva Stalin Reddy",
+            id: 16,
+            image: "/images/shubham-dubey.jpg",
+            role: "Co-founder & Head of Partnerships",
+            experience: "2+ years",
           },
         ].map((user) => (
           <UserCard key={user.id} {...user} />

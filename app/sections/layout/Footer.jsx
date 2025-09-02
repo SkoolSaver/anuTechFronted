@@ -18,19 +18,19 @@ import { footerData, socialMedia } from "@/app/utils/constants";
 import Image from "next/legacy/image";
 import styled from "@emotion/styled";
 
-const footerDesigns = [
-  { id: 1, image: "asset 1.png", title: "React JS" },
-  { id: 2, image: "asset 2.png", title: "Node JS" },
-  { id: 3, image: "asset 3.png", title: "Redux" },
-  { id: 4, image: "asset 4.png", title: "Tailwind CSS" },
-  { id: 5, image: "asset 5.png", title: "Bootstrap" },
-  { id: 6, image: "asset 6.png", title: "Sass" },
-  { id: 7, image: "asset 7.png", title: "HTML" },
-  { id: 8, image: "asset 8.png", title: "CSS" },
-  { id: 9, image: "asset 9.png", title: "JavaScript" },
-  { id: 10, image: "asset 10.png", title: "Python" },
-  { id: 11, image: "asset 11.png", title: "MySQL" },
-];
+// const footerDesigns = [
+//   { id: 1, image: "asset 1.png", title: "React JS" },
+//   { id: 2, image: "asset 2.png", title: "Node JS" },
+//   { id: 3, image: "asset 3.png", title: "Redux" },
+//   { id: 4, image: "asset 4.png", title: "Tailwind CSS" },
+//   { id: 5, image: "asset 5.png", title: "Bootstrap" },
+//   { id: 6, image: "asset 6.png", title: "Sass" },
+//   { id: 7, image: "asset 7.png", title: "HTML" },
+//   { id: 8, image: "asset 8.png", title: "CSS" },
+//   { id: 9, image: "asset 9.png", title: "JavaScript" },
+//   { id: 10, image: "asset 10.png", title: "Python" },
+//   { id: 11, image: "asset 11.png", title: "MySQL" },
+// ];
 
 const scrollAnimation = keyframes`
   0% {
@@ -66,8 +66,13 @@ const Footer = () => {
           </Typography>
           <Box display="flex" justifyContent="center">
             <Button
-              variant="contained"
-              sx={{ bgcolor: "white", color: "black" }}
+              variant="outlined"
+              sx={{  color: "white",
+              borderColor: "skyblue",
+              "&:hover": {
+                bgcolor: "skyblue",
+                color: "black",
+              }, }}
               href="/contact-us"
             >
               Connect With Us
@@ -76,8 +81,8 @@ const Footer = () => {
         </Stack>
       </Container>
 
-      <Box pt={5}>
-        <Container maxWidth="lg" sx={{ py: 10, overflow: "hidden" }}>
+      <Box pt={10}>
+        {/* <Container maxWidth="lg" sx={{ py: 10, overflow: "hidden" }}>
           <ScrollWrapper>
             <Stack direction="row" spacing={2}>
               {footerDesigns.map((ele) => (
@@ -117,7 +122,7 @@ const Footer = () => {
               ))}
             </Stack>
           </ScrollWrapper>
-        </Container>
+        </Container> */}
         <Container maxWidth="xs" sx={{ pb: 5 }}>
           <Stack direction="row" justifyContent="space-around">
             {socialMedia.map((social) => (
