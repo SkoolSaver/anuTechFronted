@@ -1,0 +1,189 @@
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.count {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.empty {
+  color: #666;
+  padding: 24px 0;
+}
+
+.tableWrap {
+  overflow: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table thead tr {
+  background: #f9fafb;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.table th, .table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table tbody tr:hover {
+  background: #fafafa;
+}
+
+/* Zebra striping */
+.table tbody tr:nth-child(even) {
+  background: #fcfcfc;
+}
+
+/* Actions column */
+.actionsCol, .actionsCell {
+  width: 90px;
+}
+
+/* Delete button */
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid #fee2e2;
+  background: #fff;
+  color: #ef4444;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  background: #fff1f2;
+}
+
+.icon-btn.delete {
+  background: #ef4444;
+  color: #fff;
+  border-color: #ef4444;
+}
+
+.icon-btn.delete:hover {
+  background: #dc2626;
+}
+
+.icon-btn.delete[disabled] {
+  opacity: 0.8;
+  background: #f87171;
+  border-color: #f87171;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+/* CSS Module-friendly class names for use in components */
+.iconBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid #fee2e2;
+  background: #fff;
+  color: #ef4444;
+  cursor: pointer;
+}
+
+.iconBtn:hover {
+  background: #fff1f2;
+}
+
+.iconBtnDelete {
+  background: #ef4444;
+  color: #fff;
+  border-color: #ef4444;
+}
+
+.iconBtnDelete:hover {
+  background: #dc2626;
+}
+
+.iconBtnDelete:disabled {
+  opacity: 0.8;
+  background: #f87171;
+  border-color: #f87171;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+/* --- Mobile responsive table: stack rows into cards --- */
+@media (max-width: 640px) {
+  .table {
+    display: block;
+  }
+  .table thead {
+    display: none;
+  }
+  .table tbody {
+    display: block;
+  }
+  .table tbody tr {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 10px 12px;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .table tbody tr:hover {
+    background: #fff; /* keep simple on mobile */
+  }
+  .table td {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: initial;
+    padding: 4px 0;
+    border: 0;
+  }
+  .table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #334155;
+    margin-right: 12px;
+  }
+  .actionsCell {
+    justify-content: flex-start;
+  }
+  .tableWrap {
+    border-radius: 10px;
+  }
+}
