@@ -26,9 +26,9 @@ const points = [
   "Apply concepts through real-world mini projects and a capstone GenAI application.",
 ];
 
-// Drive file direct-download helper
-const BROCHURE_DRIVE_FILE_ID = "1IPHLmsj3ZhVe3H7TsIwcg1vJfJ_VNYjc";
-const getBrochureDownloadUrl = () => `https://drive.google.com/uc?export=download&id=${BROCHURE_DRIVE_FILE_ID}`;
+// Brochure link (Google Drive folder)
+const getBrochureDownloadUrl = () =>
+  "https://drive.google.com/drive/folders/1O_DRLP3eR4AQ7UWGyT0nKFFivZJwQQ0s?usp=drive_link";
 
 export default function GradGainsLearningPage() {
   const [open, setOpen] = useState(false);
