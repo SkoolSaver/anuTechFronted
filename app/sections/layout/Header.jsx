@@ -64,6 +64,7 @@ const Header = () => {
       <List sx={{ flex: 1, overflowY: "auto" }}>
         {[
           { label: "Home", href: "/" },
+          { label: "Grad gains learning", href: "/grad-gains-learning" },
           { label: "About Us", href: "/about-us" },
           { label: "Products", href: "/products" },
           { label: "Careers", href: "/careers" },
@@ -157,6 +158,7 @@ const Header = () => {
           >
             {[
               { label: "Home", href: "/" },
+              { label: "Grad gains learning", href: "/grad-gains-learning" },
               { label: "About Us", href: "/about-us" },
               { label: "Products", href: "/products" },
               {
