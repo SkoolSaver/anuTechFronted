@@ -168,7 +168,7 @@ const Footer = () => {
                       sx={{ color: "green", fontSize: 14 }}
                     />
                     <Typography color="white" variant="h6" fontSize={14}>
-                      <a href="/privacy-policy" style={{ color: 'white' }}>Privacy  Policy</a>
+                      <a href="/refund-policy" style={{ color: 'white' }}>Refund Policy</a>
                     </Typography>
                   </Box>
                   <Box display="flex" alignItems="center">
@@ -177,6 +177,14 @@ const Footer = () => {
                     />
                     <Typography color="white" variant="h6" fontSize={14}>
                       <a href="/terms-conditions" style={{ color: 'white' }}>Terms & Conditions</a>
+                    </Typography>
+                  </Box>
+                  <Box display="flex" alignItems="center">
+                    <KeyboardDoubleArrowRightIcon
+                      sx={{ color: "green", fontSize: 14 }}
+                    />
+                    <Typography color="white" variant="h6" fontSize={14}>
+                      <a href="/contact-us" style={{ color: 'white' }}>Contact Us</a>
                     </Typography>
                   </Box>
                 </Stack>
