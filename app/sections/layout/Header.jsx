@@ -31,7 +31,6 @@ const services = [
   { id: 3, title: "App Development", href: "/app-development" },
   { id: 4, title: "Ecommerce Solutions", href: "/ecommerce-solutions" },
   { id: 5, title: "Digital Marketing", href: "/digital-marketing" },
-  { id: 6, title: "Graphic & Animations", href: "/graphic-animations" },
 ];
 
 const drawerWidth = 280;
