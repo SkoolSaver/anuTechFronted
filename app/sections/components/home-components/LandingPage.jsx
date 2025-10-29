@@ -94,7 +94,11 @@ const LandingPage = ({ heroSectionContent, imgPath }) => {
               )}
 
               <Button variant='outlined' size='large' color='secondary' href='/about-us'>
+
                 learn more
+
+                
+
               </Button>
             </Stack>
           </Box>
