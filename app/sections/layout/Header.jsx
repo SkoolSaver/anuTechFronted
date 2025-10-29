@@ -25,6 +25,9 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { usePathname } from "next/navigation";
 
+// Visibility toggle for Services menu (hidden but code remains)
+const SHOW_SERVICES = false;
+
 const services = [
   { id: 1, title: "Web Design", href: "/web-design" },
   { id: 2, title: "Web Development", href: "/web-development" },
@@ -89,6 +92,7 @@ const Header = () => {
           sx={{
             py: 1.5,
             cursor: "pointer",
+            display: SHOW_SERVICES ? "flex" : "none",
             "&:hover": { backgroundColor: "rgba(255,255,255,0.05)" },
           }}
         >
@@ -96,7 +100,7 @@ const Header = () => {
           {servicesOpen ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
         </ListItem>
 
-        <Collapse in={servicesOpen}>
+        <Collapse in={servicesOpen} sx={{ display: SHOW_SERVICES ? "block" : "none" }}>
           <List sx={{ bgcolor: "rgba(0,0,0,0.3)" }}>
             {services.map((service) => (
               <ListItem
@@ -172,6 +176,7 @@ const Header = () => {
                 key={item.label}
                 sx={{
                   position: "relative",
+                  display: item.label === "Services" && !SHOW_SERVICES ? "none" : "block",
                   "&:hover .dropdown-content": {
                     display: "block",
                   },
