@@ -14,7 +14,7 @@ export default function RefundPolicyPage() {
             </IconButton>
           </a>
           <Typography variant="h4" ml={1} fontWeight={700}>
-            Cancellation & Refund Policy
+            Refund & Cancellation Policy
           </Typography>
         </Box>
 
