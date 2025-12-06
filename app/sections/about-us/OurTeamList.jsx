@@ -32,7 +32,7 @@ const OurTeamList = () => {
         gridTemplateColumns={{
           xs: "repeat(1, 1fr)",
           sm: "repeat(2, 1fr)",
-          md: "repeat(3, 1fr)",
+          md: "repeat(4, 1fr)",
         }}
       >
         {[
@@ -48,6 +48,13 @@ const OurTeamList = () => {
             id: 13,
             image: "/images/gopi.jpg",
             role: "Managing Director",
+            experience: "3+ years",
+          },
+          {
+            name: "Siva stalin Reddy",
+            id: 16,
+            image: "/images/sivastalin.jpg",
+            role: "Co-Founder",
             experience: "3+ years",
           },
           // {
